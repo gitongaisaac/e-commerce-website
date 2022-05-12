@@ -1,0 +1,168 @@
+/*
+================================================================================================================================
+Header
+================================================================================================================================
+*/
+.header {
+    border-bottom: 1px solid var(--grey-300);
+}
+
+.header .flex {
+    justify-content: space-between;
+    height: 20px;
+}
+
+.social-media i {
+    background-color: var(--grey-300);
+    color: var(--grey-700);
+    padding: 15px 5px;
+    border-radius: 5px;
+}
+
+.social-media i:hover {
+    background-color: var(--tertiary-600);
+    color: var(--light-color);
+}
+
+.promo h4 {
+    font-size: var(--font-size-2);
+}
+
+.promo span {
+    font-weight: bold;
+}
+
+.lang-currency h4 {
+    font-size: var(--font-size-3);
+}
+
+.lang-currency .flex {
+    gap: 10px;
+}
+
+.lang-currency i {
+    padding: 2px;
+}
+
+/*
+================================================================================================================================
+Navbar
+================================================================================================================================
+*/
+.navbar {
+    border-bottom: 1px solid var(--grey-300);
+}
+
+.navbar .flex {
+    justify-content: space-between;
+    height: 60px;
+}
+
+.navbar .img {
+    height: 40px;
+}
+
+.input {
+    border: 1.5px solid var(--grey-300);
+    border-radius: 15px;
+    width: 800px;
+    padding: 0 10px;
+}
+
+.input .flex {
+    height: 45px;
+}
+
+.input input {
+    padding: 0 10px;
+    background-color: var(--background-color);
+    width: 700px;
+    height: 20px;
+}
+
+.input i {
+    color: var(--tertiary-800);
+}
+
+.profile i {
+    color: var(--sip-600);
+}
+
+.profile i:hover {
+    color: var(--sip-900);
+}
+
+
+/*
+================================================================================================================================
+Services
+================================================================================================================================
+*/
+.services .flex {
+    gap: 40px;
+}
+
+.item {
+    padding: 3px 5px;
+    height: 30px;
+}
+
+.item:hover {
+    color: var(--sip-400);
+    border-bottom: 2px solid var(--sip-400);
+}
+
+/*
+================================================================================================================================
+Banner
+================================================================================================================================
+*/
+.banner {
+    height: 450px;
+}
+
+.showcase {
+  background-image: url("../images/banner-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  border-radius: 5px;
+  height: 450px;
+}
+
+.text {
+    justify-content: flex-start;
+    margin: 20px 5rem;
+    padding: 40px;
+}
+
+.text .trending {
+    color: var(--red-300);
+}
+
+.text h1 {
+    max-width: 400px;
+    font-weight: bold;
+}
+
+.text h3 {
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.text .price {
+    color: var(--grey-600);
+}
+
+.price span {
+    font-size: 3rem;
+}
+
+.text button {
+    font-weight: 600;
+    /* color: var(--light-color); */
+    /* background-color: var(--sip-400); */
+}
+
+
+

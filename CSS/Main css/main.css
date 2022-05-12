@@ -396,7 +396,17 @@ Box Shadows
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
   --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
-} /* ===== End of root ===== */
+
+} 
+/* ===== End of root ===== */
+
+
+
+
+
+
+
+
 
 /* 
 ================================================================================================================================
@@ -461,7 +471,8 @@ h6 {
   text-transform: capitalize;
   line-height: 1.2;
   font-weight: var(--font-weight-1);
-  font-family: var(--headingfont-1);
+  /* font-family: var(--headingfont-3); */
+  font-family: var(--bodyfont-10);
   color: var(--dark-color);
 }
 
