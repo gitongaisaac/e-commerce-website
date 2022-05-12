@@ -160,9 +160,61 @@ Banner
 
 .text button {
     font-weight: 600;
-    /* color: var(--light-color); */
-    /* background-color: var(--sip-400); */
 }
 
+/*
+================================================================================================================================
+Product
+================================================================================================================================
+*/
+.products {
+    width: fit-content;
+}
+
+.products .flex {
+    width: fit-content;
+    flex-wrap: nowrap;
+}
+
+.product-showcase .card {
+    background-color: var(--background-color);
+    border: 1px solid var(--grey-500);
+    width: 350px;
+}
+
+.product-showcase .flex {
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.item-img {
+    background-color: var(--grey-300);
+    color: #333;
+    padding: 10px;
+    border: 1px solid var(--grey-500);
+    border-radius: 10px;
+}
+
+.item-img img {
+    height: 40px;
+}
+
+.item-description h5 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.item-description .flex {
+    gap: 60px;
+}
+
+.item-description a {
+    color: var(--red-400);
+    font-weight: 600;
+}
+
+.product-name {
+    display: flex;
+}
 
 
