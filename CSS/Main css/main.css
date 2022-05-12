@@ -331,6 +331,7 @@ Containers
   --max-width-2: 1200px;
   --max-width-3: 1300px;
   --max-width-4: 1400px;
+  --max-width-5: 1500px;
 
   /* 
 ================================================================================================================================
@@ -680,6 +681,13 @@ Containers
 
 .container-4 {
   max-width: var(--max-width-4);
+  overflow: auto;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.container-5 {
+  max-width: var(--max-width-5);
   overflow: auto;
   margin: 0 auto;
   padding: 0 40px;
