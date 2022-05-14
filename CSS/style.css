@@ -4,7 +4,7 @@ Header
 ================================================================================================================================
 */
 .header {
-    border-bottom: 1px solid var(--grey-300);
+    border-bottom: 1px solid var(--sip-300);
 }
 
 .header .flex {
@@ -26,6 +26,8 @@ Header
 
 .promo h4 {
     font-size: var(--font-size-2);
+    color: #f0932b;
+    /* color: var(--sip-500); */
 }
 
 .promo span {
@@ -44,13 +46,17 @@ Header
     padding: 2px;
 }
 
+.lang-currency i:hover {
+    color: var(--sip-500);
+}
+
 /*
 ================================================================================================================================
 Navbar
 ================================================================================================================================
 */
 .navbar {
-    border-bottom: 1px solid var(--grey-300);
+    border-bottom: 1px solid var(--sip-300);
 }
 
 .navbar .flex {
@@ -63,7 +69,7 @@ Navbar
 }
 
 .input {
-    border: 1.5px solid var(--grey-300);
+    border: 1.5px solid var(--flip-700);
     border-radius: 15px;
     width: 800px;
     padding: 0 10px;
@@ -169,20 +175,20 @@ Banner
 Product
 ================================================================================================================================
 */
-.products {
-    /* width: fit-content; */
-}
+/* .products {
+    width: fit-content;
+} */
 
 .products .container-5 {
     max-width: 1500px;
     padding: 0 10px;
 }
 
-.products .flex {
-    /* width: fit-content; */
-    /* flex-wrap: nowrap; */
-    /* gap: 10px; */
-}
+/* .products .flex {
+    width: fit-content;
+    flex-wrap: nowrap;
+    gap: 10px;
+} */
 
 .product-showcase .card {
     background-color: var(--background-color);
@@ -225,4 +231,156 @@ Product
     display: flex;
 }
 
+.highlight {
+    /* background-color: var(--spin-600); */
+    background-color: #f0932b;
+}
+
+/*
+================================================================================================================================
+Display
+================================================================================================================================
+*/
+.display .grid {
+    justify-content: flex-start;
+    align-items: flex-start;
+    grid-template-columns: 2fr 6fr;
+}
+
+.category {
+    background-color: var(--background-color);
+}
+
+.category h3 {
+    color: var(--secondary-500);
+    font-family: var(--bodyfont-2);
+}
+
+.category-seller .card {
+ width: 300px;
+ border: 1px solid var(--grey-400);
+}
+
+.category .flex {
+    justify-content: space-between;
+}
+
+.category li {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--grey-300);
+}
+
+.category img {
+    width: 30px;
+}
+
+.seller {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: flex-start;
+}
+
+.seller h3 {
+    color: var(--secondary-500);
+    font-family: var(--bodyfont-2);
+}
+
+.seller-description .title {
+    font-family: var(--bodyfont-9);
+    font-size: 20px;
+}
+
+.category-seller i:hover {
+    color: var(--vet-500);
+}
+
+.seller-item {
+    border-bottom: 2px solid var(--grey-300);
+    justify-content: flex-start;
+}
+
+.seller-item img {
+    padding: 5px 0;
+    width: 80px;
+}
+
+.rate-icons i {
+    padding: 0px;
+    margin: 0px;
+    color: #f9932b;
+}
+
+.rate-icons {
+    padding: 10px;
+    gap: 1px;
+    justify-content: flex-start;
+}
+
+.cost {
+    justify-content: flex-start;
+}
+
+.cost h5 {
+    font-size: 16px;
+}
+
+.cost h4 {
+    font-size: 20px;
+    font-family: var(--bodyfont-3);
+}
+
+.striked {
+   text-decoration: line-through var(--grey-600) solid 2px;
+}
+
+.display-products .grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.display-showcase {
+    gap: 10px;
+}
+
+.dispaly-title {
+    /* margin-bottom: 20px; */
+    margin: 0 10px 20px 10px;
+    padding: 10px;
+    border-bottom: 2px solid var(--grey-400);
+}
+
+.display-showcase .card {
+    overflow: visible;
+    width: 340px;
+    /* width: 400px; */
+    border: 1px solid var(--grey-400);
+}
+
+.collection {
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.collection img {
+    width: 80px;
+}
+
+.collection-description h4 {
+    font-size: 19px;
+}
+
+.item-name {
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+.item-name:hover { 
+    color: #f9932b;
+    font-weight: bold;
+}
+
+.collection-description .cost h4 {
+    color: var(--red-500);
+    font-weight: bold;
+}
 
