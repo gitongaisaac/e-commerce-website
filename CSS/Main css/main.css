@@ -472,7 +472,6 @@ h6 {
   text-transform: capitalize;
   line-height: 1.2;
   font-weight: var(--font-weight-1);
-  /* font-family: var(--headingfont-3); */
   font-family: var(--bodyfont-10);
   color: var(--dark-color);
 }
@@ -488,8 +487,13 @@ h2 {
 h3 {
   font-size: var(--font-size-6);
 }
+
 h4 {
   font-size: var(--font-size-5);
+}
+
+h5 {
+  font-size: var(--font-size-2);
 }
 
 p {
@@ -513,12 +517,6 @@ ul {
   list-style-type: none;
 }
 
-.img {
-  width: 100%;
-  display: block;
-  object-fit: cover;
-}
-
 i {
   padding: 10px;
 }
@@ -528,6 +526,16 @@ pre {
   background: var(--grey-900);
   color: #fff;
   padding: 10px;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 .select,
@@ -569,6 +577,14 @@ Top and side styles // Provides the margins on items on the top and side.
 
 .top-3 {
   margin: 20px 0 1rem 0;
+}
+
+.top-4 {
+  margin: 20px 0;
+}
+
+.top-5 {
+  margin: 10px 0;
 }
 
 .side {

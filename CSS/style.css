@@ -302,7 +302,7 @@ Display
 
 .seller-item img {
     padding: 5px 0;
-    width: 80px;
+    width: 70px;
 }
 
 .rate-icons i {
@@ -343,26 +343,41 @@ Display
 }
 
 .dispaly-title {
-    /* margin-bottom: 20px; */
+    font-weight: 600;
     margin: 0 10px 20px 10px;
     padding: 10px;
     border-bottom: 2px solid var(--grey-400);
 }
 
 .display-showcase .card {
+    padding: 10px 10px;
     overflow: visible;
-    width: 340px;
-    /* width: 400px; */
+    width: 310px;
     border: 1px solid var(--grey-400);
+    background-color: var(--tertiary-200);
+    background-color: var(--sip-100);
 }
+
+/* .arrivals .card {
+    background-color: var(--sip-400);
+}
+
+.trending .card {
+    background-color: var(--tint-600);
+}
+
+.rated .card {
+    background-color: var(--sip-400);
+} */
 
 .collection {
     justify-content: flex-start;
-    gap: 5px;
+    gap: 15px;
 }
 
 .collection img {
     width: 80px;
+    border-radius: 7px;
 }
 
 .collection-description h4 {
@@ -384,3 +399,197 @@ Display
     font-weight: bold;
 }
 
+.deals-1,
+.deals-2 {
+    padding: 40px;
+}
+
+.deals .grid {
+    grid-template-columns: 3fr 4fr;
+    align-items: center;
+}
+
+.deals img {
+    width: 400px;
+    text-align: center;
+    background-color: var(--sip-300);
+    border: 2px solid var(--red-300);
+    border-radius: 50%;
+    padding: 20px 0;
+}
+
+.deals-2 img {
+    border: 2px solid var(--tint-300);
+    background-color: var(--tint-800);
+}
+
+.actual-cost {
+    color: #f0932b;
+}
+
+.deals .striked {
+    color: var(--grey-700);
+}
+
+.deals .btn {
+    background-color: var(--sip-500);
+    /* background-color: var(--low-500); */
+}
+
+.deals-2 .btn {
+    background-color: var(--tint-700);
+}
+
+.deals button h4 {
+    color: var(--light-color);
+}
+
+
+.progress-details {
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.progress {
+    background-color: var(--grey-300);
+    padding: 5px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.time {
+    justify-content: flex-start;
+}
+
+.time .card {
+    background-color: var(--grey-300);
+    gap: 0px;
+    margin: 0;
+    box-shadow: none;
+}
+
+.new {
+    gap: 10px;
+}
+
+.new .card {
+    width: 230px;
+    height: 420px;
+    box-shadow: var(--shadow-1);
+    border: 1px solid var(--grey-400);
+}
+
+.new .card:hover {
+    box-shadow: var(--shadow-4);
+}
+
+.view-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    border-radius: 5px;
+    height: 200px;
+}
+
+.jacket {
+    background-image: url("../images/products/jacket-3.jpg");
+}
+
+.jacket:hover {
+    background-image: url("../images/products/jacket-4.jpg");
+}
+
+.shirt {
+    background-image: url("../images/products/shirt-1.jpg");
+}
+
+.shirt:hover {
+    background-image: url("../images/products/shirt-2.jpg");
+}
+
+.trench {
+    background-image: url("../images/products/jacket-5.jpg");
+}
+.trench:hover {
+    background-image: url("../images/products/jacket-6.jpg");
+}
+
+.skirt {
+    background-image: url("../images/products/clothes-3.jpg");
+}
+
+.skirt:hover {
+    background-image: url("../images/products/clothes-4.jpg");
+}
+
+.casual {
+    background-image: url("../images/products/shoe-2.jpg");
+}
+.casual:hover {
+    background-image: url("../images/products/shoe-2_1.jpg");
+}
+
+.pocket-watch {
+    background-image: url("../images/products/watch-3.jpg");
+}
+
+.pocket-watch:hover {
+    background-image: url("../images/products/watch-4.jpg");
+}
+
+.wrist-watch {
+    background-image: url("../images/products/watch-1.jpg");
+}
+
+.wrist-watch:hover {
+    background-image: url("../images/products/watch-2.jpg");
+}
+
+.party {
+    background-image: url("../images/products/party-wear-1.jpg");
+}
+
+.party:hover {
+    background-image: url("../images/products/party-wear-2.jpg");
+}
+
+.coat {
+    background-image: url("../images/products/jacket-1.jpg");
+}
+
+.coat:hover {
+    background-image: url("../images/products/jacket-2.jpg");
+}
+
+.sports {
+    background-image: url("../images/products/sports-2.jpg");
+}
+
+.sports:hover {
+    background-image: url("../images/products/sports-4.jpg");
+}
+
+.formal {
+    background-image: url("../images/products/shoe-1.jpg");
+}
+
+.formal:hover {
+    background-image: url("../images/products/shoe-1_1.jpg");
+}
+
+.shorts {
+    background-image: url("../images/products/shorts-1.jpg");
+}
+
+.shorts:hover {
+    background-image: url("../images/products/shorts-2.jpg");
+}
+
+.new-title {
+    color: var(--red-500);
+    font-weight: 600;
+}
+
+.view .rate-icons {
+    padding: 5px 0;
+}
