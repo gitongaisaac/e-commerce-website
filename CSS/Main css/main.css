@@ -60,6 +60,17 @@ Colors || Grey, base, shade, primary, secondary, tertiary, sip, gin, low, stroke
   --grey-800: #344256;
   --grey-900: #1e293b;
 
+  /* tone */
+  --tone-100: #ffffff;
+  --tone-200: #d3d4da;
+  --tone-300: #a7a9b5;
+  --tone-400: #7b7f90;
+  --tone-500: #4f546b;
+  --tone-600: #232946;
+  --tone-700: #1c2138;
+  --tone-800: #15192a;
+  --tone-900: #0e101c;
+
   /* Base (Blue shades) */
   --base-100: #ccccff;
   --base-200: #9999ff;
@@ -114,6 +125,28 @@ Colors || Grey, base, shade, primary, secondary, tertiary, sip, gin, low, stroke
   --tertiary-700: #99737a;
   --tertiary-800: #664d51;
   --tertiary-900: #332629;
+
+  /* faded */
+  --faded-100: #fbe1df;
+  --faded-200: #f8c3bf;
+  --faded-300: #f4a69e;
+  --faded-400: #f1887e;
+  --faded-500: #ed6a5e;
+  --faded-600: #be554b;
+  --faded-700: #8e4038;
+  --faded-800: #5f2a26;
+  --faded-900: #2f1513;
+
+  /* Lit */
+  --lit-100: #ffffff;
+  --lit-200: #ffe1cc;
+  --lit-300: #ffa466;
+  --lit-400: #ff8533;
+  --lit-500: #ff6700;
+  --lit-600: #cc5200;
+  --lit-700: #993e00;
+  --lit-800: #662900;
+  --lit-900: #331500;
 
   /* Sip */
   --sip-100: #f7e6ed;
@@ -714,6 +747,13 @@ Containers
 Backgrounds
 ================================================================================================================================
 */
+.bg-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  border-radius: 5px;
+  /* height: 200px; */
+}
 
 .bg-white {
   background-color: var(--light-color);
