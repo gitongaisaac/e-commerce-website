@@ -202,6 +202,11 @@ Product
     gap: 10px;
 } */
 
+.product-showcase {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
 .product-showcase .card {
     background-color: var(--background-color);
     border: 1px solid var(--grey-500);
@@ -209,7 +214,7 @@ Product
 }
 
 .product-showcase .flex {
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     gap: 10px;
 }
 
@@ -253,6 +258,10 @@ Product
 Display
 ================================================================================================================================
 */
+.display .container-5 {
+    overflow: visible;
+}
+
 .display .grid {
     justify-content: flex-start;
     align-items: flex-start;
@@ -260,14 +269,19 @@ Display
 }
 
 .category {
-    background-color: var(--tone-600);
-    color: var(--light-color);
+    background-color: var(--grey-400);
 }
 
 .category h3 {
-    color: var(--secondary-300);
+    color: var(--secondary-500);
     font-family: var(--bodyfont-2);
     font-size: 25px;
+}
+
+
+.category-seller {
+    position: sticky;
+    top: 20px;
 }
 
 .category-seller .card {
@@ -298,14 +312,13 @@ Display
     display: grid;
     grid-template-columns: 1fr;
     justify-content: flex-start;
-    background-color: var(--tone-600);
     border-radius: 7px;
     padding: 20px;
     margin: 10px;
 }
 
 .seller h3 {
-    color: var(--secondary-300);
+    color: var(--secondary-400);
     font-family: var(--bodyfont-2);
     font-size: 25px;
 }
@@ -313,7 +326,6 @@ Display
 .seller-description .title {
     font-family: var(--bodyfont-9);
     font-size: 18px;
-    color: var(--grey-300);
 }
 
 .category-seller i:hover {
@@ -347,11 +359,7 @@ Display
 }
 
 .cost h5 {
-    font-size: 16px;
-}
-
-.seller .cost h5 {
-    color: var(--grey-400);
+    font-size: 16px;   
 }
 
 .cost h4 {
@@ -384,8 +392,7 @@ Display
     overflow: visible;
     width: 310px;
     border: 1px solid var(--grey-400);
-    /* background-color: var(--sip-100); */
-    background-color: var(--grey-100);
+    background-color: var(--tone-100);
 }
 
 .collection {
@@ -402,14 +409,20 @@ Display
     font-size: 19px;
 }
 
+.collection-description .vet {
+    font-size: 17px;
+    color: var(--faded-600);
+    font-weight: 600;
+}
+
 .item-name {
     padding: 5px 0;
     font-size: 17px;
 }
 
 .item-name:hover { 
-    color: #f9932b;
     font-weight: bold;
+    color: var(--faded-500);
 }
 
 .collection-description .cost h4 {
@@ -496,6 +509,7 @@ Display
     box-shadow: var(--shadow-1);
     border: 1px solid var(--grey-400);
     background-color: #fffffb;
+    transition: var(--transition-3);
 }
 
 .new .card:hover {
@@ -504,101 +518,106 @@ Display
 
 .view-img {
     height: 200px;
+    transition: var(--transition-3);
+}
+
+.view-img:hover {
+    transform: scale(1.2);
 }
 
 .jacket {
     background-image: url("../images/products/jacket-3.jpg");
 }
 
-.jacket:hover {
+/* .jacket:hover {
     background-image: url("../images/products/jacket-4.jpg");
-}
+} */
 
 .shirt {
     background-image: url("../images/products/shirt-1.jpg");
 }
 
-.shirt:hover {
+/* .shirt:hover {
     background-image: url("../images/products/shirt-2.jpg");
-}
+} */
 
 .trench {
     background-image: url("../images/products/jacket-5.jpg");
 }
-.trench:hover {
+/* .trench:hover {
     background-image: url("../images/products/jacket-6.jpg");
-}
+} */
 
 .skirt {
     background-image: url("../images/products/clothes-3.jpg");
 }
 
-.skirt:hover {
+/* .skirt:hover {
     background-image: url("../images/products/clothes-4.jpg");
-}
+} */
 
 .casual {
     background-image: url("../images/products/shoe-2.jpg");
 }
-.casual:hover {
+/* .casual:hover {
     background-image: url("../images/products/shoe-2_1.jpg");
-}
+} */
 
 .pocket-watch {
     background-image: url("../images/products/watch-3.jpg");
 }
 
-.pocket-watch:hover {
+/* .pocket-watch:hover {
     background-image: url("../images/products/watch-4.jpg");
-}
+} */
 
 .wrist-watch {
     background-image: url("../images/products/watch-1.jpg");
 }
 
-.wrist-watch:hover {
+/* .wrist-watch:hover {
     background-image: url("../images/products/watch-2.jpg");
-}
+} */
 
 .party {
     background-image: url("../images/products/party-wear-1.jpg");
 }
 
-.party:hover {
+/* .party:hover {
     background-image: url("../images/products/party-wear-2.jpg");
-}
+} */
 
 .coat {
     background-image: url("../images/products/jacket-1.jpg");
 }
 
-.coat:hover {
+/* .coat:hover {
     background-image: url("../images/products/jacket-2.jpg");
-}
+} */
 
 .sports {
     background-image: url("../images/products/sports-2.jpg");
 }
 
-.sports:hover {
+/* .sports:hover {
     background-image: url("../images/products/sports-4.jpg");
-}
+} */
 
 .formal {
     background-image: url("../images/products/shoe-1.jpg");
 }
 
-.formal:hover {
+/* .formal:hover {
     background-image: url("../images/products/shoe-1_1.jpg");
-}
+} */
 
 .shorts {
     background-image: url("../images/products/shorts-1.jpg");
 }
 
-.shorts:hover {
+/* .shorts:hover {
     background-image: url("../images/products/shorts-2.jpg");
-}
+} */
 
 .new-title {
     color: var(--red-500);

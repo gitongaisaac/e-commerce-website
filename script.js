@@ -19,9 +19,8 @@ const shorts = document.querySelector('.shorts');
 
 
 /* ============= Other Elements ================ */
-const views = document.querySelectorAll('.view');
 const viewImgs = document.querySelectorAll('.view-img');
-
+const views = document.querySelectorAll('.views');
 
 
 /*
@@ -83,14 +82,6 @@ const imageHovers = [jacketImgHover, shirtImgHover, trenchImgHover,
                     wristWatchImgHover, partyImgHover, coatImgHover, 
                     sportsImgHover, formalImgHover, shortsImgHover];
 
-/* ============= style syntax ================ */
-// const styleSyntax = style.backgroundImage;
-
-
-    // const jacketa = "url('images/products/jewellery-1.jpg')";
-    // jacket.style.backgroundImage = jacketa;
-
-
 
 /*
 ================================================================================================================================
@@ -112,34 +103,13 @@ class UI {
         });
     }
 
-
-
-    static images() {
-        imgTags.forEach(imgTag => {
-            UI.mouseOver(imgTag);
-            UI.mouseLeave(imgTag);
-        });
-        
-        images.forEach(image => {
-            UI.mouseOver(image);
-        });
-        
-        imageHovers.forEach(imageHover => {
-            UI.mouseLeave(imageHover);
-        });
-    }
-
-
-
-    static mouseOver(imgTag, image) {
-        imgTag.style.backgroundColor = image;
-    }
-
-
-    static mouseLeave(imgTag, imageHover) {
-        imgTag.style.backgroundColor = imageHover;
+    static scroll() {
+        // const goods = document.querySelector('.goods');
+        // console.log(goods);
     }
 }
+
+    UI.scroll();
 
 
 /*
@@ -169,22 +139,43 @@ document.addEventListener('DOMContentLoaded', (e) => {
 Eventlistener
 ================================================================================================================================
 */
+let k = '1';
+for(let i = ''; i < '12'; i++) {
+    const x = k++;
+    const c = x - 1;
+    
+    
+    const no = document.querySelector('#no' + x);
 /* ============= mouse over ================ */
-views.forEach(view => {
-    view.addEventListener('mouseover', (e) => {
-    // view.style.boxShadow = 'var(--shadow-4)';
-    view.style.boxShadow = '0 20px 25px -5px rgba(0, 0, 0, 0.1), -10px 10px 10px 5px rgba(0, 0, 0, 0.04)';
-    UI.mouseOver();
+    no.addEventListener('mouseover', (e) => {
+        const shadow = '0 20px 25px -5px rgba(0, 0, 0, 0.1), -10px 10px 10px 5px rgba(0, 0, 0, 0.04)';
+        no.style.boxShadow = shadow;
+        no.style.transform = 'scale(1.0)';
+        imgTags[c].style.transform = 'Scale(1.2)';
+        imgTags[c].style.backgroundImage = imageHovers[c];
     });
-});
 
 
 /* ============= mouse leave ================ */
-views.forEach(view => {
-    view.addEventListener('mouseleave', (e) => {
-    view.style.boxShadow = 'var(--shadow-1)';
-    UI.mouseLeave(); 
+    no.addEventListener('mouseleave', (e) => {
+        no.style.boxShadow = 'var(--shadow-1)';
+        no.style.transform = 'none';
+        imgTags[c].style.transform = 'none';
+        imgTags[c].style.backgroundImage = images[c];
     });
+}
+
+
+
+/* ============= Scroll ================ */
+const goods = document.querySelector('.goods');
+const categorySeller = document.querySelector('.category-seller');
+const displayProducts = document.querySelector('.display-products');
+
+window.addEventListener('scroll', (e) => {
+    // console.log(categorySeller.offsetHeight);
+    // console.log(categorySeller.clientHeight);
+   console.log('it works')
 });
 
 
