@@ -62,7 +62,7 @@ Navbar
 ================================================================================================================================
 */
 .navbar {
-    border-bottom: 2px solid var(--sip-300);
+    border-bottom: 1px solid var(--sip-300);
     background-color: var(--grey-100);
     border-radius: 0 0 30px 30px;
 }
@@ -113,9 +113,7 @@ Services
 ================================================================================================================================
 */
 .services {
-    background-color: var(--tone-600);
     border-radius: 50px 50px 0 0;
-    /* margin: 0 5px; */
 }
 
 .services .flex {
@@ -125,13 +123,22 @@ Services
 .item {
     padding: 3px 5px;
     height: 30px;
-    color: var(--grey-500);
+    color: var(--grey-700);
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .item:hover {
-    color: var(--faded-200);
+    color: var(--faded-600);
     border-bottom: 2px solid var(--sip-400);
     border-radius: 30px;
+}
+
+.item:focus {
+    color: var(--faded-600);
+    border-bottom: 2px solid var(--sip-400);
+    border-radius: 30px;
+    outline: none;
 }
 
 /*
@@ -242,6 +249,7 @@ Display
 */
 .display .container-5 {
     overflow: visible;
+    padding: 0 15px;
 }
 
 .display .grid {
@@ -354,12 +362,18 @@ Display
    text-decoration: line-through var(--grey-600) solid 2px;
 }
 
-.display-products .grid {
-    grid-template-columns: repeat(3, 1fr);
-}
-
 .display-showcase {
     gap: 10px;
+}
+
+.tone {
+    max-width: 340px;
+    overflow-x: scroll;
+    background-color: var(--background-color);
+}
+
+.tone .grid {
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .dispaly-title {

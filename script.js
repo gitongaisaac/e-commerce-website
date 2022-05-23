@@ -167,19 +167,6 @@ for(let i = ''; i < '12'; i++) {
 
 
 
-/* ============= Scroll ================ */
-const goods = document.querySelector('.goods');
-const categorySeller = document.querySelector('.category-seller');
-const displayProducts = document.querySelector('.display-products');
-
-window.addEventListener('scroll', (e) => {
-    // console.log(categorySeller.offsetHeight);
-    // console.log(categorySeller.clientHeight);
-   console.log('it works')
-});
-
-
-
 /*
 ================================================================================================================================
 filter
