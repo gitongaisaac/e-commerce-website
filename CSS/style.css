@@ -187,35 +187,20 @@ Banner
 Product
 ================================================================================================================================
 */
-/* .products {
-    width: fit-content;
-} */
-
 .products .container-5 {
-    max-width: 1500px;
     padding: 0 10px;
 }
 
-/* .products .flex {
-    width: fit-content;
-    flex-wrap: nowrap;
-    gap: 10px;
-} */
-
 .product-showcase {
-    display: flex;
-    flex-wrap: nowrap;
+ flex-wrap: nowrap;
 }
 
-.product-showcase .card {
+.item-card {
     background-color: var(--background-color);
     border: 1px solid var(--grey-500);
-    width: 330px;
-}
-
-.product-showcase .flex {
-    /* justify-content: flex-start; */
-    gap: 10px;
+    min-width: 330px; 
+    margin-bottom: 25px;
+    justify-content: flex-start;
 }
 
 .item-img {
@@ -235,22 +220,19 @@ Product
     font-weight: bold;
 }
 
-.item-description .flex {
-    gap: 60px;
-}
-
 .item-description a {
     color: var(--red-400);
     font-weight: 600;
 }
 
 .product-name {
-    display: flex;
+    justify-content: space-between;
+    gap: 40px;
 }
 
 .highlight {
-    /* background-color: var(--spin-600); */
     background-color: #f0932b;
+    background-color: var(--faded-500);
 }
 
 /*
