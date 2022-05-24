@@ -152,12 +152,28 @@ Services
 Banner
 ================================================================================================================================
 */
-.banner {
-    height: 450px;
+.snap {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+    overflow: hidden;
+    height: 500px;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+}
+
+.snap:hover {
+    overflow: auto hidden;
 }
 
 .showcase {
-  height: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    border-radius: 10px;
+    height: 450px;
+    width: 1300px;
+    scroll-snap-align: start;
 }
 
 .banner-one .showcase {
@@ -166,6 +182,7 @@ Banner
 
 .banner-two .showcase {
     background-image: url("../images/banner-2.jpg");
+    margin: 0 40px;
 }
 
 .banner-three .showcase {
