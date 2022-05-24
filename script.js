@@ -102,14 +102,8 @@ class UI {
             }
         });
     }
-
-    static scroll() {
-        // const goods = document.querySelector('.goods');
-        // console.log(goods);
-    }
 }
 
-    UI.scroll();
 
 
 /*
@@ -164,6 +158,11 @@ for(let i = ''; i < '12'; i++) {
         imgTags[c].style.backgroundImage = images[c];
     });
 }
+
+
+/* ============= products hover ================ */
+const products = document.querySelector('.products');
+
 
 
 
