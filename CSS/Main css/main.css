@@ -60,6 +60,26 @@ Colors || Grey, base, shade, primary, secondary, tertiary, sip, gin, low, stroke
   --grey-800: #344256;
   --grey-900: #1e293b;
 
+  /* complement */
+  --complement-10: #fbfbfb;
+  --complement-20: #f8f6f7;
+  --complement-30: #f4f2f3;
+  --complement-40: #f0edef;
+  --complement-50: #ede9ec;
+  --complement-60: #e9e4e8;
+  --complement-70: #e5e0e4;
+  --complement-80: #e1dbe0;
+  --complement-90: #ded7dc;
+  --complement-100: #dad2d8;
+  --complement-200: #c4bdc2;
+  --complement-300: #aea8ad;
+  --complement-400: #999397;
+  --complement-500: #837e82;
+  --complement-600: #6d696c;
+  --complement-700: #575456;
+  --complement-800: #413f41;
+  --complement-900: #2c2a2b;
+
   /* tone */
   --tone-100: #ffffff;
   --tone-200: #d3d4da;
@@ -468,8 +488,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 ::-webkit-scrollbar {
-  width: 12vh; 
-  height: 1vh;
+  width: 8px; 
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -511,7 +531,7 @@ html {
 body {
   line-height: 1.75;
   font-size: var(--font-size-1);
-  font-family: var(--bodyfont-11);
+  font-family: var(--bodyfont-9);
   background-color: var(--background-color);
   color: var(--text-color);
 }

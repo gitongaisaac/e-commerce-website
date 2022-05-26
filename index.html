@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="CSS/Main css/normalize.css" />
     <link rel="stylesheet" href="CSS/Main css/main.css" />
     <link rel="stylesheet" href="CSS/style.css" />
-    <title>e-commerce</title>
+    <title>Anon e-commerce</title>
   </head>
   <body>
     <!--
@@ -49,14 +49,24 @@
             </div>
 
             <div class="lang-currency flex">
-              <div class="currency flex">
+              <select id="currency">
+                <option value="USD">USD $</option>
+                <option value="EUR">EUR €</option>
+              </select>
+
+              <select id="lang">
+                <option value="English">ENGLISH</option>
+                <option value="Espanol">ESPANOL</option>
+                <option value="Espanol">FRANCAIS</option>
+              </select>
+              <!-- <div class="currency flex">
                 <h4 class="top">USD $</h4>
                 <i class="fa-solid fa-angle-down"></i>
               </div>
               <div class="lang flex">
                 <h4 class="top">ENGLISH</h4>
                 <i class="fa-solid fa-angle-down"></i>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -116,18 +126,140 @@
     <section class="services">
       <div class="container-4">
         <div class="my-1">
-          <div class="spin">
-            <ul class="flex">
-              <li><a href="index.html" class="item">Home</a></li>
-              <li><a href="#" class="item">Categories</a></li>
-              <li><a href="#" class="item">Men's</a></li>
-              <li><a href="#" class="item">Women's</a></li>
-              <li><a href="#" class="item">Jewelry</a></li>
-              <li><a href="#" class="item">Perfume</a></li>
-              <li><a href="#" class="item">Blog</a></li>
-              <li><a href="#" class="item">Hot Offers</a></li>
-            </ul>
-          </div>
+          <ul class="sip flex">
+            <li class="dropdown">
+              <a href="index.html" class="item">Home</a>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="item">Categories</a>
+              <div class="dropdown-card">
+                <div class="menu drop-down card">
+                  <div class="grid">
+                    <div>
+                      <ul>
+                        <li>
+                          <h5 class="dispaly-title top-5">Electronics</h5>
+                        </li>
+                        <li><a href="#" class="list-item">Desktop</a></li>
+                        <li><a href="#" class="list-item">Laptop</a></li>
+                        <li><a href="#" class="list-item">Camera</a></li>
+                        <li><a href="#" class="list-item">Tablet</a></li>
+                        <li><a href="#" class="list-item">Headphone</a></li>
+                        <li>
+                          <img
+                            src="images/electronics-banner-1.jpg"
+                            alt="An image of headphones"
+                            class="img"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <ul>
+                        <li><h5 class="dispaly-title top-5">Men's</h5></li>
+                        <li><a href="#" class="list-item">Formal</a></li>
+                        <li><a href="#" class="list-item">Casual</a></li>
+                        <li><a href="#" class="list-item">Sports</a></li>
+                        <li><a href="#" class="list-item">Jacket</a></li>
+                        <li><a href="#" class="list-item">sunglasse</a></li>
+                        <li>
+                          <img
+                            src="images/mens-banner.jpg"
+                            alt="An image of headphones"
+                            class="img"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <ul>
+                        <li><h5 class="dispaly-title top-5">Women's</h5></li>
+                        <li><a href="#" class="list-item">Formal</a></li>
+                        <li><a href="#" class="list-item">Casual</a></li>
+                        <li><a href="#" class="list-item">Perfumes</a></li>
+                        <li><a href="#" class="list-item">Cosmetics</a></li>
+                        <li><a href="#" class="list-item">Bags</a></li>
+                        <li>
+                          <img
+                            src="images/womens-banner.jpg"
+                            alt="An image of headphones"
+                            class="img"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <ul>
+                        <li>
+                          <h5 class="dispaly-title top-5">Electronics</h5>
+                        </li>
+                        <li><a href="#" class="list-item">Smart Watch</a></li>
+                        <li><a href="#" class="list-item">Smart TV</a></li>
+                        <li><a href="#" class="list-item">Keyboards</a></li>
+                        <li><a href="#" class="list-item">Mouse</a></li>
+                        <li><a href="#" class="list-item">Microphone</a></li>
+                        <li>
+                          <img
+                            src="images/electronics-banner-2.jpg"
+                            alt="An image of headphones"
+                            class="img"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="item">Men's</a>
+              <ul class="drop-down card">
+                <li><a href="#" class="list-item">Shirts</a></li>
+                <li><a href="#" class="list-item">Shorts & Jeans</a></li>
+                <li><a href="#" class="list-item">Safety Shoes</a></li>
+                <li><a href="#" class="list-item">Wallet</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="item">Women's</a>
+              <ul class="drop-down card">
+                <li><a href="#" class="list-item">Dress & Frock</a></li>
+                <li><a href="#" class="list-item">Earrings</a></li>
+                <li><a href="#" class="list-item">Necklace</a></li>
+                <li><a href="#" class="list-item">Makeup Kit</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="item">Jewelry</a>
+              <ul class="drop-down card">
+                <li><a href="#" class="list-item">Earrings</a></li>
+                <li><a href="#" class="list-item">Couple Rings</a></li>
+                <li><a href="#" class="list-item">Necklace</a></li>
+                <li><a href="#" class="list-item">Bracelets</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="item">Perfume</a>
+              <ul class="drop-down card">
+                <li><a href="#" class="list-item">Clothes Perfume</a></li>
+                <li><a href="#" class="list-item">Deodorant</a></li>
+                <li><a href="#" class="list-item">Flower Fragrance</a></li>
+                <li><a href="#" class="list-item">Air Freshener</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown"><a href="#" class="item">Blog</a></li>
+
+            <li class="dropdown"><a href="#" class="item">Hot Offers</a></li>
+          </ul>
         </div>
       </div>
     </section>
@@ -324,7 +456,7 @@
                     />
                     <p class="top">Clothes</p>
                   </div>
-                  <i class="fas fa-plus"></i>
+                  <a href="#"><i class="fas fa-plus"></i></a>
                 </li>
 
                 <li class="category-list flex">
@@ -336,7 +468,7 @@
                     />
                     <p class="top">Footware</p>
                   </div>
-                  <i class="fas fa-plus"></i>
+                  <a href="#"><i class="fas fa-plus"></i></a>
                 </li>
 
                 <li class="category-list flex">
@@ -348,7 +480,7 @@
                     />
                     <p class="top">Jewelry</p>
                   </div>
-                  <i class="fas fa-plus"></i>
+                  <a href="#"><i class="fas fa-plus"></i></a>
                 </li>
 
                 <li class="category-list flex">
@@ -360,7 +492,7 @@
                     />
                     <p class="top">Perfumes</p>
                   </div>
-                  <i class="fas fa-plus"></i>
+                  <a href="#"><i class="fas fa-plus"></i></a>
                 </li>
 
                 <li class="category-list flex">
@@ -372,7 +504,7 @@
                     />
                     <p class="top">Cosmetics</p>
                   </div>
-                  <i class="fas fa-plus"></i>
+                  <a href="#"><i class="fas fa-plus"></i></a>
                 </li>
 
                 <li class="category-list flex">
@@ -384,7 +516,7 @@
                     />
                     <p class="top">Glasses</p>
                   </div>
-                  <i class="fas fa-plus"></i>
+                  <a href="#"><i class="fas fa-plus"></i></a>
                 </li>
 
                 <li class="category-list flex">
@@ -396,7 +528,7 @@
                     />
                     <p class="top">Bags</p>
                   </div>
-                  <i class="fas fa-plus"></i>
+                  <a href="#"><i class="fas fa-plus"></i></a>
                 </li>
               </ul>
             </div>
@@ -495,7 +627,7 @@
                         <div class="title-h4">
                           <h4 class="top vet">Relaxed Short Sleeve T-Shirt</h4>
                         </div>
-                        <a href="#"><h5 class="top item-name">Clothes</h5></a>
+                        <a href="#" class="item-name">Clothes</a>
                         <div class="cost flex">
                           <h4 class="top">$45.00</h4>
                           <h5 class="top striked">$12.00</h5>
@@ -513,7 +645,7 @@
                         <div class="title-h4">
                           <h4 class="top vet">Girls Pink Embro Design Top</h4>
                         </div>
-                        <a href="#"><h5 class="top item-name">Clothes</h5></a>
+                        <a href="#" class="item-name">Clothes</a>
                         <div class="cost flex">
                           <h4 class="top">$61.00</h4>
                           <h5 class="top striked">$9.00</h5>
@@ -529,7 +661,7 @@
                       />
                       <div class="collection-description">
                         <h4 class="top vet">Black Floral Wrap Midi Skirt</h4>
-                        <a href="#"><h5 class="top item-name">Clothes</h5></a>
+                        <a href="#" class="item-name">Clothes</a>
                         <div class="cost flex">
                           <h4 class="top">$76.00</h4>
                           <h5 class="top striked">$25.00</h5>
@@ -545,9 +677,7 @@
                       />
                       <div class="collection-description">
                         <h4 class="top vet">Pure Garment Dyed Cotton Shirt</h4>
-                        <a href="#"
-                          ><h5 class="top item-name">Mens Fashion</h5></a
-                        >
+                        <a href="#" class="item-name">Mens Fashion</a>
                         <div class="cost flex">
                           <h4 class="top">$68.00</h4>
                           <h5 class="top striked">$31.00</h5>
@@ -565,9 +695,7 @@
                       />
                       <div class="collection-description">
                         <h4 class="top vet">Men Yarn Fleece Full-Zip Jacket</h4>
-                        <a href="#"
-                          ><h5 class="top item-name">Winter Wear</h5></a
-                        >
+                        <a href="#" class="item-name">Jackets</a>
                         <div class="cost flex">
                           <h4 class="top">$15.00</h4>
                           <h5 class="top striked">$12.00</h5>
@@ -583,7 +711,7 @@
                       />
                       <div class="collection-description">
                         <h4 class="top vet">Mens Winter Leathers Jacket</h4>
-                        <a href="#"><h5 class="top item-name">Jackets</h5></a>
+                        <a href="#" class="item-name">Jackets</a>
                         <div class="cost flex">
                           <h4 class="top">$32.00</h4>
                           <h5 class="top striked">$20.00</h5>
@@ -599,7 +727,7 @@
                       />
                       <div class="collection-description">
                         <h4 class="top vet">Relaxed Short Sleeve T-Shirt</h4>
-                        <a href="#"><h5 class="top item-name">Jackets</h5></a>
+                        <a href="#" class="item-name">Jackets</a>
                         <div class="cost flex">
                           <h4 class="top">$50.00</h4>
                           <h5 class="top striked">$25.00</h5>
@@ -617,7 +745,7 @@
                         <h4 class="top vet">
                           Better Basics French Terry Shorts
                         </h4>
-                        <a href="#"><h5 class="top item-name">Shorts</h5></a>
+                        <a href="#" class="item-name">Shorts</a>
                         <div class="cost flex">
                           <h4 class="top">$20.00</h4>
                           <h5 class="top striked">$10.00</h5>
@@ -640,7 +768,7 @@
                       />
                       <div class="collection-description">
                         <h4 class="top vet">Running & Trekking Shoes-White</h4>
-                        <a href="#"><h5 class="top item-name">Sports</h5></a>
+                        <a href="#" class="item-name">Sports</a>
                         <div class="cost flex">
                           <h4 class="top">$49.00</h4>
                           <h5 class="top striked">$15.00</h5>
@@ -656,7 +784,7 @@
                       />
                       <div class="collection-description">
                         <h4 class="top vet">Trekking & Running Shoes-Black</h4>
-                        <a href="#"><h5 class="top item-name">Sports</h5></a>
+                        <a href="#" class="item-name">Sports</a>
                         <div class="cost flex">
                           <h4 class="top">$78.00</h4>
                           <h5 class="top striked">$36.00</h5>
@@ -672,9 +800,7 @@
                       />
                       <div class="collection-description">
                         <h4 class="top vet">Women's Party Wear Shoes</h4>
-                        <a href="#"
-                          ><h5 class="top item-name">Party Wear</h5></a
-                        >
+                        <a href="#" class="item-name">Party Wear</a>
                         <div class="cost flex">
                           <h4 class="top">$94.00</h4>
                           <h5 class="top striked">$42.00</h5>
@@ -690,7 +816,7 @@
                       />
                       <div class="collection-description">
                         <h4 class="top vet">Sports Claw Women's Shoes</h4>
-                        <a href="#"><h5 class="top item-name">Sports</h5></a>
+                        <a href="#" class="item-name">Sports</a>
                         <div class="cost flex">
                           <h4 class="top">$54.00</h4>
                           <h5 class="top striked">$65.00</h5>
@@ -708,7 +834,7 @@
                       />
                       <div class="collection-description">
                         <h4 class="top vet">Air Trekking Shoes-White</h4>
-                        <a href="#"><h5 class="top item-name">Sports</h5></a>
+                        <a href="#" class="item-name">Sports</a>
                         <div class="cost flex">
                           <h4 class="top">$52.00</h4>
                           <h5 class="top striked">$55.00</h5>
@@ -724,7 +850,7 @@
                       />
                       <div class="collection-description">
                         <h4 class="top vet">Boot With Suede Detail</h4>
-                        <a href="#"><h5 class="top item-name">Boots</h5></a>
+                        <a href="#" class="item-name">Boots</a>
                         <div class="cost flex">
                           <h4 class="top">$20.00</h4>
                           <h5 class="top striked">$30.00</h5>
@@ -740,7 +866,7 @@
                       />
                       <div class="collection-description">
                         <h4 class="top vet">Men's Leather Formal Wear Shoes</h4>
-                        <a href="#"><h5 class="top item-name">Formal</h5></a>
+                        <a href="#" class="item-name">Formal</a>
                         <div class="cost flex">
                           <h4 class="top">$56.00</h4>
                           <h5 class="top striked">$78.00</h5>
@@ -756,7 +882,7 @@
                       />
                       <div class="collection-description">
                         <h4 class="top vet">Casual Men's Browns Shoes</h4>
-                        <a href="#"><h5 class="top item-name">Casual</h5></a>
+                        <a href="#" class="item-name">Casual</a>
                         <div class="cost flex">
                           <h4 class="top">$50.00</h4>
                           <h5 class="top striked">$55.00</h5>
@@ -781,7 +907,7 @@
                         <div class="title-h4">
                           <h4 class="top vet">Pocket Watch Leather Pouch</h4>
                         </div>
-                        <a href="#"><h5 class="top item-name">Watches</h5></a>
+                        <a href="#" class="item-name">Watches</a>
                         <div class="cost flex">
                           <h4 class="top">$50.00</h4>
                           <h5 class="top striked">$34.00</h5>
@@ -797,7 +923,7 @@
                       />
                       <div class="collection-description">
                         <h4 class="top vet">Silver Deer Heart Necklace</h4>
-                        <a href="#"><h5 class="top item-name">Jewellery</h5></a>
+                        <a href="#" class="item-name">Jewellery</a>
                         <div class="cost flex">
                           <h4 class="top">$84.00</h4>
                           <h5 class="top striked">$30.00</h5>
@@ -813,7 +939,7 @@
                       />
                       <div class="collection-description">
                         <h4 class="top vet">Titan 100ml Women's Perfume</h4>
-                        <a href="#"><h5 class="top item-name">Perfumes</h5></a>
+                        <a href="#" class="item-name">Perfumes</a>
                         <div class="cost flex">
                           <h4 class="top">42.00</h4>
                           <h5 class="top striked">$10.00</h5>
@@ -829,7 +955,7 @@
                       />
                       <div class="collection-description">
                         <h4 class="top vet">Men's Leather Reversible Belt</h4>
-                        <a href="#"><h5 class="top item-name">Clothes</h5></a>
+                        <a href="#" class="item-name">Clothes</a>
                         <div class="cost flex">
                           <h4 class="top">$15.00</h4>
                           <h5 class="top striked">$12.00</h5>
@@ -847,7 +973,7 @@
                       />
                       <div class="collection-description">
                         <h4 class="top vet">Platinum Zircon Classic Ring</h4>
-                        <a href="#"><h5 class="top item-name">Jewellery</h5></a>
+                        <a href="#" class="item-name">Jewellery</a>
                         <div class="cost flex">
                           <h4 class="top">$62.00</h4>
                           <h5 class="top striked">$65.00</h5>
@@ -863,7 +989,7 @@
                       />
                       <div class="collection-description">
                         <h4 class="top vet">Smart Wathch Vital Plus</h4>
-                        <a href="#"><h5 class="top item-name">Watches</h5></a>
+                        <a href="#" class="item-name">Watches</a>
                         <div class="cost flex">
                           <h4 class="top">$56.00</h4>
                           <h5 class="top striked">$78.00</h5>
@@ -879,7 +1005,7 @@
                       />
                       <div class="collection-description">
                         <h4 class="top vet">Shampoo Conditioner Packs</h4>
-                        <a href="#"><h5 class="top item-name">Cosmetics</h5></a>
+                        <a href="#" class="item-name">Cosmetics</a>
                         <div class="cost flex">
                           <h4 class="top">$20.00</h4>
                           <h5 class="top striked">$30.00</h5>
@@ -895,7 +1021,7 @@
                       />
                       <div class="collection-description">
                         <h4 class="top vet">Rose old Peackock Earrings</h4>
-                        <a href="#"><h5 class="top item-name">Jewellery</h5></a>
+                        <a href="#" class="item-name">Jewellery</a>
                         <div class="cost flex">
                           <h4 class="top">$20.00</h4>
                           <h5 class="top striked">$30.00</h5>
