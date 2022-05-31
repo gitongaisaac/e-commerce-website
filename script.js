@@ -164,6 +164,10 @@ for(let i = ''; i < '12'; i++) {
 const products = document.querySelector('.products');
 
 
+const banner = document.querySelectorAll('.banner');
+console.log(banner)
+
+
 /*
 ================================================================================================================================
 filter

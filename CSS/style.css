@@ -185,6 +185,7 @@ Services
     visibility: hidden;
     opacity: 0%;
     pointer-events: none;
+    transition: var(--transition-3);
 }
 
 .drop-down .dispaly-title {
@@ -211,8 +212,14 @@ Services
     animation-fill-mode: forwards;
 }
 
+.drop-down:hover {
+    box-shadow: var(--shadow-4);
+    transform: scale(0.98);
+}
+
 @keyframes dropdown {
     0% {top: 300px;}
+    25% {top: 300px;}
 }
 
 .list-item {
@@ -249,14 +256,6 @@ Services
 Banner
 ================================================================================================================================
 */
-
-.banner {
-    position: relative;
-    animation-name: banner;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-}
-
 .snap {
     display: flex;
     flex-wrap: nowrap;
@@ -272,6 +271,10 @@ Banner
 }
 
 .showcase {
+    position: relative;
+    /* animation-name: banner;
+    animation-duration: 3s;
+    animation-fill-mode: forwards; */
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -281,34 +284,34 @@ Banner
     scroll-snap-align: start;
 }
 
+@keyframes banner {
+    0% {right: 1500px;}
+    100% {right: 0px;}
+}
+
+@keyframes text {
+    0% {left: -1500px;}
+    100% {left: 0px;}
+}
+
 .banner-one .showcase {
     background-image: url("../images/banner-1.jpg");
-    /* animation-name: banner;
-    animation-duration: 2s;
-    animation-fill-mode: forwards; */
 }
 
 .banner-two .showcase {
     background-image: url("../images/banner-2.jpg");
     margin: 0 40px;
-    /* animation-name: banner;
-    animation-duration: 2s;
-    animation-fill-mode: forwards; */
 }
 
 .banner-three .showcase {
     background-image: url("../images/banner-3.jpg");
-    /* animation-name: banner;
-    animation-duration: 2s;
-    animation-fill-mode: forwards; */
-}
-
-@keyframes banner {
-    0% {left: 500px;}
-    /* 100% {right: ;} */
 }
 
 .text {
+    /* position: relative;
+    animation-name: text;
+    animation-duration: 3s;
+    animation-fill-mode: forwards; */
     justify-content: flex-start;
     margin: 20px 5rem;
     padding: 40px;
