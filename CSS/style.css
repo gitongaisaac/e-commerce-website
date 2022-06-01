@@ -126,8 +126,26 @@ Navbar
     color: var(--tertiary-800);
 }
 
+.profile .count {
+    position: relative;
+}
+
+.profile .count p {
+    position: absolute;
+    font-weight: bold;
+    right: 10px;
+    top: 0;
+    background-color: var(--faded-500);
+    padding: 3px 3px;
+    margin: 0px;
+    border-radius: 50%;
+    color: var(--light-color);
+    line-height: 1;
+
+}
+
 .profile li a {
-    color: var(--tone-600);
+    color: var(--grey-600);
 }
 
 .profile li a:hover {
@@ -267,7 +285,8 @@ Banner
 }
 
 .snap:hover {
-    overflow: auto hidden;
+    /* overflow: auto hidden; */
+    overflow: hidden;
 }
 
 .showcase {
