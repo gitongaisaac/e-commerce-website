@@ -151,21 +151,21 @@ for(let i = ''; i < '12'; i++) {
 
 
 /* ============= mouse leave ================ */
-    no.addEventListener('mouseleave', (e) => {
-        no.style.boxShadow = 'var(--shadow-1)';
-        no.style.transform = 'none';
-        imgTags[c].style.transform = 'none';
-        imgTags[c].style.backgroundImage = images[c];
-    });
+no.addEventListener('mouseleave', (e) => {
+    no.style.boxShadow = 'var(--shadow-1)';
+    no.style.transform = 'none';
+    imgTags[c].style.transform = 'none';
+    imgTags[c].style.backgroundImage = images[c];
+});
 }
 
 
-/* ============= products hover ================ */
-const products = document.querySelector('.products');
-
-
+/* ============= Show case ================ */
 const banner = document.querySelectorAll('.banner');
-console.log(banner)
+const b1 = document.getElementById('b1');
+const b2 = document.getElementById('b2');
+const b3 = document.getElementById('b3');
+console.log(b1)
 
 
 /*

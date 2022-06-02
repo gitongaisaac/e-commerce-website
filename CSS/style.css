@@ -364,6 +364,25 @@ Banner
     font-weight: 600;
 }
 
+.banners .dot {
+    position: relative;
+    top: -100px;
+}
+
+.dots {
+    gap: 30px;
+}
+
+.dot {
+    background-color: transparent;
+    border: 2px solid var(--faded-500);
+    transition: 1s;
+}
+
+.dot:hover {
+    background-color: var(--faded-500);
+}
+
 /*
 ================================================================================================================================
 Product
