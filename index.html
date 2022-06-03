@@ -274,9 +274,15 @@
     <section class="banners">
       <div class="container-4">
         <div class="snap">
-          <div class="banner banner-one" id="b1">
+          <div class="radio">
+            <input type="radio" name="radio-btn" id="radio1" />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+          </div>
+
+          <div class="banner banner-one first" id="b1">
             <div class="showcase bg-img">
-              <div class="text flex text-center">
+              <div class="text flex text-center text-one">
                 <div class="text-content">
                   <h3 class="top trending">Trending Items</h3>
                   <h1 class="top">women's latest fashion sale</h1>
@@ -287,22 +293,21 @@
             </div>
           </div>
 
-          <div class="banner banner-two" id="b2">
-            <div class="showcase bg-img">
-              <div class="text flex text-center">
-                <div class="text-content">
-                  <h3 class="top trending">Trending Accessories</h3>
-                  <h1 class="top">Modern Sunglasses</h1>
-                  <h3 class="top price">sarting at $ <span>15</span>.00</h3>
-                  <button class="btn btn-md btn-tertiary">Shop Now</button>
-                </div>
+          <div class="banner banner-two hide id="b2">
+          <div class="showcase bg-img">
+            <div class="text flex text-center text-two">
+              <div class="text-content">
+                <h3 class="top trending">Trending Accessories</h3>
+                <h1 class="top">Modern Sunglasses</h1>
+                <h3 class="top price">sarting at $ <span>15</span>.00</h3>
+                <button class="btn btn-md btn-tertiary">Shop Now</button>
               </div>
             </div>
           </div>
 
-          <div class="banner banner-three" id="b3">
+          <div class="banner banner-three hide" id="b3">
             <div class="showcase bg-img">
-              <div class="text flex text-center">
+              <div class="text flex text-center text-three">
                 <div class="text-content">
                   <h3 class="top trending">Sale Offer</h3>
                   <h1 class="top">New Fashion Summer Sale</h1>
@@ -312,12 +317,19 @@
               </div>
             </div>
           </div>
+
+          <div class="auto-navigation">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
         </div>
 
-        <div class="dots">
-          <span class="dot" id="dot1"></span>
-          <span class="dot" id="dot1"></span>
-          <span class="dot" id="dot1"></span>
+        <div class="manual-navigation dots">
+          <label for="radio1" class="dot" id="radio-dot1"></label>
+          <label for="radio2" class="dot" id="radio-dot2"></label>
+          <label for="radio3" class="dot" id="radio-dot3"></label>
         </div>
       </div>
     </section>
@@ -1172,6 +1184,18 @@
               <div class="new flex">
                 <div class="views card" id="no1">
                   <div class="jacket view-img bg-img"></div>
+                  <div class="rotate"></div>
+                  <div class="offer">
+                    <h5 class="top bold">15%</h5>
+                  </div>
+                  <div class="options">
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-regular fa-eye"></i></a>
+                    <a href="#"
+                      ><i class="fa-solid fa-arrow-rotate-left"></i
+                    ></a>
+                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                  </div>
                   <div class="view-description">
                     <h5 class="top-5 new-title">Jacket</h5>
                     <p class="top">Men's winter Leather Jackets</p>
@@ -1191,6 +1215,17 @@
 
                 <div class="views card" id="no2">
                   <div class="shirt view-img bg-img"></div>
+                  <div class="sale-new">
+                    <h5 class="top bold">Sale</h5>
+                  </div>
+                  <div class="options">
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-regular fa-eye"></i></a>
+                    <a href="#"
+                      ><i class="fa-solid fa-arrow-rotate-left"></i
+                    ></a>
+                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                  </div>
                   <div class="view-description">
                     <h5 class="top-5 new-title">Shirt</h5>
                     <p class="top">Pure Garment Dyed Cotton Shirt</p>
@@ -1210,6 +1245,14 @@
 
                 <div class="views card" id="no3">
                   <div class="trench view-img bg-img"></div>
+                  <div class="options">
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-regular fa-eye"></i></a>
+                    <a href="#"
+                      ><i class="fa-solid fa-arrow-rotate-left"></i
+                    ></a>
+                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                  </div>
                   <div class="view-description">
                     <h5 class="top-5 new-title">Jacket</h5>
                     <p class="top">Men's Yarn Fleece Full-zip Jacket</p>
@@ -1229,6 +1272,17 @@
 
                 <div class="views card" id="no4">
                   <div class="skirt view-img bg-img"></div>
+                  <div class="sale-new">
+                    <h5 class="top bold">New</h5>
+                  </div>
+                  <div class="options">
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-regular fa-eye"></i></a>
+                    <a href="#"
+                      ><i class="fa-solid fa-arrow-rotate-left"></i
+                    ></a>
+                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                  </div>
                   <div class="view-description">
                     <h5 class="top-5 new-title">Skirt</h5>
                     <p class="top">Black Floral Wrap Midi Skirt</p>
@@ -1248,6 +1302,14 @@
 
                 <div class="views card" id="no5">
                   <div class="casual view-img bg-img"></div>
+                  <div class="options">
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-regular fa-eye"></i></a>
+                    <a href="#"
+                      ><i class="fa-solid fa-arrow-rotate-left"></i
+                    ></a>
+                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                  </div>
                   <div class="view-description">
                     <h5 class="top-5 new-title">Casual</h5>
                     <p class="top">Casual Men's Brown Shoes</p>
@@ -1267,6 +1329,17 @@
 
                 <div class="views card" id="no6">
                   <div class="pocket-watch view-img bg-img"></div>
+                  <div class="sale-new">
+                    <h5 class="top bold">Sale</h5>
+                  </div>
+                  <div class="options">
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-regular fa-eye"></i></a>
+                    <a href="#"
+                      ><i class="fa-solid fa-arrow-rotate-left"></i
+                    ></a>
+                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                  </div>
                   <div class="view-description">
                     <h5 class="top-5 new-title">Watches</h5>
                     <p class="top">Pocket Watch Leather Pouch</p>
@@ -1286,6 +1359,14 @@
 
                 <div class="views card" id="no7">
                   <div class="wrist-watch view-img bg-img"></div>
+                  <div class="options">
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-regular fa-eye"></i></a>
+                    <a href="#"
+                      ><i class="fa-solid fa-arrow-rotate-left"></i
+                    ></a>
+                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                  </div>
                   <div class="view-description">
                     <h5 class="top-5 new-title">Watches</h5>
                     <p class="top">Smart Watch Vital Plus</p>
@@ -1305,6 +1386,17 @@
 
                 <div class="views card" id="no8">
                   <div class="party view-img bg-img"></div>
+                  <div class="sale-new">
+                    <h5 class="top bold">Sale</h5>
+                  </div>
+                  <div class="options">
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-regular fa-eye"></i></a>
+                    <a href="#"
+                      ><i class="fa-solid fa-arrow-rotate-left"></i
+                    ></a>
+                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                  </div>
                   <div class="view-description">
                     <h5 class="top-5 new-title">Party Wear</h5>
                     <p class="top">Women's Party Wear Shoes</p>
@@ -1324,6 +1416,14 @@
 
                 <div class="views card" id="no9">
                   <div class="coat view-img bg-img"></div>
+                  <div class="options">
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-regular fa-eye"></i></a>
+                    <a href="#"
+                      ><i class="fa-solid fa-arrow-rotate-left"></i
+                    ></a>
+                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                  </div>
                   <div class="view-description">
                     <h5 class="top-5 new-title">Jacket</h5>
                     <p class="top">Men's winter Leather Jackets</p>
@@ -1343,6 +1443,17 @@
 
                 <div class="views card" id="no10">
                   <div class="sports view-img bg-img"></div>
+                  <div class="sale-new">
+                    <h5 class="top bold">Sale</h5>
+                  </div>
+                  <div class="options">
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-regular fa-eye"></i></a>
+                    <a href="#"
+                      ><i class="fa-solid fa-arrow-rotate-left"></i
+                    ></a>
+                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                  </div>
                   <div class="view-description">
                     <h5 class="top-5 new-title">Sports</h5>
                     <p class="top">Trekking & Running Shoes-Black</p>
@@ -1362,6 +1473,14 @@
 
                 <div class="views card" id="no11">
                   <div class="formal view-img bg-img"></div>
+                  <div class="options">
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-regular fa-eye"></i></a>
+                    <a href="#"
+                      ><i class="fa-solid fa-arrow-rotate-left"></i
+                    ></a>
+                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                  </div>
                   <div class="view-description">
                     <h5 class="top-5 new-title">Formal</h5>
                     <p class="top">Men's Leather Formal Wear Shoes</p>
@@ -1381,6 +1500,17 @@
 
                 <div class="views card" id="no12">
                   <div class="shorts view-img bg-img"></div>
+                  <div class="sale-new">
+                    <h5 class="top bold">New</h5>
+                  </div>
+                  <div class="options">
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-regular fa-eye"></i></a>
+                    <a href="#"
+                      ><i class="fa-solid fa-arrow-rotate-left"></i
+                    ></a>
+                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                  </div>
                   <div class="view-description">
                     <h5 class="top-5 new-title">Shorts</h5>
                     <p class="top">Better Basics French Terry Sweat-shorts</p>

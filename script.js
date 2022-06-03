@@ -165,8 +165,86 @@ const banner = document.querySelectorAll('.banner');
 const b1 = document.getElementById('b1');
 const b2 = document.getElementById('b2');
 const b3 = document.getElementById('b3');
-console.log(b1)
+// console.log(b1)
 
+// const radioDot1 = document.getElementById('radio-dot1');
+// const radioDot2 = document.getElementById('radio-dot2');
+// const radioDot3 = document.getElementById('radio-dot3');
+const showcase = document.querySelector('.showcase');
+
+// radioDot1.addEventListener('click', (e) => {
+//     showcase.style.backgroundImage = "url(images/banner-1.jpg)";
+//     b1.classList.remove('text');
+// });
+
+// radioDot2.addEventListener('click', (e) => {
+//     showcase.style.backgroundImage = "url(images/banner-2.jpg)";
+//     showcase.classList.add('text-two');
+//     showcase.classList.remove('text-one');
+// });
+
+// radioDot3.addEventListener('click', (e) => {
+//     showcase.style.backgroundImage = "url(images/banner-3.jpg)";
+//     showcase.classList.add('text-three');
+// });
+
+const text = document.querySelector('.text');
+// console.log(text);
+showcase.classList;
+
+setInterval(function () {
+    showcase.style.backgroundImage = "url(images/banner-1.jpg)";
+    showcase.style.transition = '3s';
+    showcase.innerHTML = `
+        <div class="text flex text-center text-one">
+            <div class="text-content">
+                <h3 class="top trending">Trending Items</h3>
+                <h1 class="top">women's latest fashion sale</h1>
+                <h3 class="top price">sarting at $ <span>20</span>.00</h3>
+                <button class="btn btn-md btn-tertiary">Shop Now</button>
+            </div>
+        </div>
+    `
+}, 5000);
+
+
+setInterval(function () {
+    showcase.style.backgroundImage = "url(images/banner-2.jpg)";
+    showcase.style.transition = '3s';
+    showcase.innerHTML = `
+        <div class="text flex text-center text-two">
+            <div class="text-content">
+                <h3 class="top trending">Trending Accessories</h3>
+                <h1 class="top">Modern Sunglasses</h1>
+                <h3 class="top price">sarting at $ <span>15</span>.00</h3>
+                <button class="btn btn-md btn-tertiary">Shop Now</button>
+            </div>
+        </div>
+    `
+}, 10000);
+
+setInterval(function () {
+    showcase.style.backgroundImage = "url(images/banner-3.jpg)";
+    showcase.style.transition = '3s';
+    showcase.innerHTML = `
+        <div class="text flex text-center text-three">
+            <div class="text-content">
+                <h3 class="top trending">Sale Offer</h3>
+                <h1 class="top">New Fashion Summer Sale</h1>
+                <h3 class="top price">sarting at $ <span>29</span>.99</h3>
+                <button class="btn btn-md btn-tertiary">Shop Now</button>
+            </div>
+        </div>
+    `
+}, 15000);
+
+
+
+// showcase.style.animationName = 'banner';
+// showcase.style.animationDuration = '3s';
+// showcase.style.animationFillMode = 'forwards';
+// showcase.style.animationIterationCount = 'infinite';
+// showcase.style.animationDelay = '5s';
 
 /*
 ================================================================================================================================

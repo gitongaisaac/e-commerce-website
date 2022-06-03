@@ -274,12 +274,18 @@ Services
 Banner
 ================================================================================================================================
 */
+.banners .container-4 {
+ height: 500px;
+ overflow: hidden;
+}
+
 .snap {
     display: flex;
     flex-wrap: nowrap;
     margin-bottom: 20px;
     overflow: hidden;
     height: 500px;
+    width: 1300px;
     scroll-snap-type: x mandatory;
     overscroll-behavior-x: contain;
 }
@@ -289,11 +295,12 @@ Banner
     overflow: hidden;
 }
 
+/* .snap .bg-img {
+    width: 1300px;
+} */
+
 .showcase {
     position: relative;
-    /* animation-name: banner;
-    animation-duration: 3s;
-    animation-fill-mode: forwards; */
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -303,14 +310,19 @@ Banner
     scroll-snap-align: start;
 }
 
+
+input[type="radio"] {
+    display: none;
+}
+
 @keyframes banner {
     0% {right: 1500px;}
     100% {right: 0px;}
 }
 
 @keyframes text {
-    0% {left: -1500px;}
-    100% {left: 0px;}
+    0% {bottom: 200px;}
+    100% {bottom: 0px;}
 }
 
 .banner-one .showcase {
@@ -319,22 +331,39 @@ Banner
 
 .banner-two .showcase {
     background-image: url("../images/banner-2.jpg");
-    margin: 0 40px;
 }
 
 .banner-three .showcase {
     background-image: url("../images/banner-3.jpg");
 }
 
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -1300px;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -2600px;
+}
+
 .text {
-    /* position: relative;
-    animation-name: text;
-    animation-duration: 3s;
-    animation-fill-mode: forwards; */
     justify-content: flex-start;
     margin: 20px 5rem;
     padding: 40px;
+    
 }
+
+/* .text-content {
+    background-color: red;
+    animation-name: text;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+} */
 
 .text .trending {
     color: var(--red-300);
@@ -362,6 +391,10 @@ Banner
 
 .text button {
     font-weight: 600;
+}
+
+.manual-navigation {
+    width: 1300px;
 }
 
 .banners .dot {
@@ -764,10 +797,12 @@ Display
 }
 
 .new .card {
+    position: relative;
+    overflow: hidden;
     width: 230px;
     height: 420px;
-    box-shadow: var(--shadow-1);
     border: 1px solid var(--grey-400);
+    box-shadow: var(--shadow-1);
     background-color: #fffffb;
     transition: var(--transition-3);
 }
@@ -783,6 +818,109 @@ Display
 
 .view-img:hover {
     transform: scale(1.2);
+}
+
+.new .offer {
+    position: absolute;
+    background-color: var(--tint-600);
+    padding: 2px 5px;
+    border-radius: 4px;
+    top: 15px;
+    left: 15px;
+}
+
+.new #no1 .offer h5 {
+    color: var(--light-color);
+}
+
+.new .sale-new {
+    position: absolute;
+    top: 10px;
+    left: -50px;
+    padding: 5px 20px;
+    width: 150px;
+    transform: rotateZ(-45deg);
+}
+
+.new .sale-new {
+    background-color: var(--dark-color);
+}
+
+.new #no4 .sale-new,
+.new #no12 .sale-new {
+    background-color: var(--faded-400);
+}
+
+.new .sale-new h5 {
+    color: var(--light-color);
+    text-align: center;
+    font-size: 14px;
+}
+
+.new .card:hover .options {
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+    animation-name: options;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.new .options {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    margin-right: 5px;
+    padding: 3px;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    animation-name: options-out;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    transition: 1s;
+}
+
+.new .options a {
+    border: 1px solid var(--grey-400);
+    background-color: var(--light-color);
+    padding: 1px;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.new .options a:hover {
+    background-color: var(--dark-color);
+}
+
+.new .options i {
+    color: var(--grey-600);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}    
+
+.new .options i:hover {
+    color: var(--light-color);
+} 
+
+@keyframes options {
+    0% {right: -60px;}
+    100% {right: 0px;}
+}
+
+@keyframes options-out {
+    0% {right: 0px;}
+    100% {right: -60px;}
 }
 
 .jacket {
