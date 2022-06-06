@@ -192,51 +192,51 @@ const text = document.querySelector('.text');
 // console.log(text);
 showcase.classList;
 
-setInterval(function () {
-    showcase.style.backgroundImage = "url(images/banner-1.jpg)";
-    showcase.style.transition = '3s';
-    showcase.innerHTML = `
-        <div class="text flex text-center text-one">
-            <div class="text-content">
-                <h3 class="top trending">Trending Items</h3>
-                <h1 class="top">women's latest fashion sale</h1>
-                <h3 class="top price">sarting at $ <span>20</span>.00</h3>
-                <button class="btn btn-md btn-tertiary">Shop Now</button>
-            </div>
-        </div>
-    `
-}, 5000);
+// setInterval(function () {
+//     showcase.style.backgroundImage = "url(images/banner-1.jpg)";
+//     showcase.style.transition = '3s';
+//     showcase.innerHTML = `
+//         <div class="text flex text-center text-one">
+//             <div class="text-content">
+//                 <h3 class="top trending">Trending Items</h3>
+//                 <h1 class="top">women's latest fashion sale</h1>
+//                 <h3 class="top price">sarting at $ <span>20</span>.00</h3>
+//                 <button class="btn btn-md btn-tertiary">Shop Now</button>
+//             </div>
+//         </div>
+//     `
+// }, 5000);
 
 
-setInterval(function () {
-    showcase.style.backgroundImage = "url(images/banner-2.jpg)";
-    showcase.style.transition = '3s';
-    showcase.innerHTML = `
-        <div class="text flex text-center text-two">
-            <div class="text-content">
-                <h3 class="top trending">Trending Accessories</h3>
-                <h1 class="top">Modern Sunglasses</h1>
-                <h3 class="top price">sarting at $ <span>15</span>.00</h3>
-                <button class="btn btn-md btn-tertiary">Shop Now</button>
-            </div>
-        </div>
-    `
-}, 10000);
+// setInterval(function () {
+//     showcase.style.backgroundImage = "url(images/banner-2.jpg)";
+//     showcase.style.transition = '3s';
+//     showcase.innerHTML = `
+//         <div class="text flex text-center text-two">
+//             <div class="text-content">
+//                 <h3 class="top trending">Trending Accessories</h3>
+//                 <h1 class="top">Modern Sunglasses</h1>
+//                 <h3 class="top price">sarting at $ <span>15</span>.00</h3>
+//                 <button class="btn btn-md btn-tertiary">Shop Now</button>
+//             </div>
+//         </div>
+//     `
+// }, 10000);
 
-setInterval(function () {
-    showcase.style.backgroundImage = "url(images/banner-3.jpg)";
-    showcase.style.transition = '3s';
-    showcase.innerHTML = `
-        <div class="text flex text-center text-three">
-            <div class="text-content">
-                <h3 class="top trending">Sale Offer</h3>
-                <h1 class="top">New Fashion Summer Sale</h1>
-                <h3 class="top price">sarting at $ <span>29</span>.99</h3>
-                <button class="btn btn-md btn-tertiary">Shop Now</button>
-            </div>
-        </div>
-    `
-}, 15000);
+// setInterval(function () {
+//     showcase.style.backgroundImage = "url(images/banner-3.jpg)";
+//     showcase.style.transition = '3s';
+//     showcase.innerHTML = `
+//         <div class="text flex text-center text-three">
+//             <div class="text-content">
+//                 <h3 class="top trending">Sale Offer</h3>
+//                 <h1 class="top">New Fashion Summer Sale</h1>
+//                 <h3 class="top price">sarting at $ <span>29</span>.99</h3>
+//                 <button class="btn btn-md btn-tertiary">Shop Now</button>
+//             </div>
+//         </div>
+//     `
+// }, 15000);
 
 
 
