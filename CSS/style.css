@@ -327,6 +327,10 @@ Banner
   z-index: 1;
 }
 
+/* .b-1 {
+  opacity: inherit;
+} */
+
 .banner-one {
   background-image: url("../images/banner-1.jpg");
 }
