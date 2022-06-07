@@ -112,6 +112,7 @@ class UI {
         setTimeout(() => {
             textOne.classList.remove('text');
             b1.classList.add('hide');
+            b2.classList.add('hide');
 
         }, 7000);
     }
