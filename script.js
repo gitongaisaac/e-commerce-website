@@ -4,24 +4,22 @@ Dom Elements
 ================================================================================================================================
 */
 /* ============= Image divs ================ */
-const jacket = document.querySelector('.jacket');
-const shirt = document.querySelector('.shirt');
-const trench = document.querySelector('.trench');
-const skirt = document.querySelector('.skirt');
-const casual= document.querySelector('.casual');
-const pocketWatch = document.querySelector('.pocket-watch');
-const wristWatch = document.querySelector('.wrist-watch');
-const party = document.querySelector('.party');
-const coat = document.querySelector('.coat');
-const sports = document.querySelector('.sports');
-const formal = document.querySelector('.formal');
-const shorts = document.querySelector('.shorts');
-
+const jacket = document.querySelector(".jacket");
+const shirt = document.querySelector(".shirt");
+const trench = document.querySelector(".trench");
+const skirt = document.querySelector(".skirt");
+const casual = document.querySelector(".casual");
+const pocketWatch = document.querySelector(".pocket-watch");
+const wristWatch = document.querySelector(".wrist-watch");
+const party = document.querySelector(".party");
+const coat = document.querySelector(".coat");
+const sports = document.querySelector(".sports");
+const formal = document.querySelector(".formal");
+const shorts = document.querySelector(".shorts");
 
 /* ============= Other Elements ================ */
-const viewImgs = document.querySelectorAll('.view-img');
-const views = document.querySelectorAll('.views');
-
+const viewImgs = document.querySelectorAll(".view-img");
+const views = document.querySelectorAll(".views");
 
 /*
 ================================================================================================================================
@@ -64,24 +62,55 @@ const formalImgHover = "url('images/products/shoe-1_1.jpg')";
 const shortsImg = "url('images/products/shorts-1.jpg')";
 const shortsImgHover = "url('images/products/shorts-2.jpg')";
 
-
 /*
 ================================================================================================================================
 Arrays
 ================================================================================================================================
 */
-const imgTags = [jacket, shirt, trench, skirt, casual, pocketWatch, 
-                 wristWatch, party, coat, sports, formal, shorts];
+const imgTags = [
+  jacket,
+  shirt,
+  trench,
+  skirt,
+  casual,
+  pocketWatch,
+  wristWatch,
+  party,
+  coat,
+  sports,
+  formal,
+  shorts,
+];
 
-const images = [jacketImg, shirtImg, trenchImg, skirtImg, casualImg, 
-                pocketWatchImg, wristWatchImg, partyImg, coatImg, 
-                sportsImg, formalImg, shortsImg];
+const images = [
+  jacketImg,
+  shirtImg,
+  trenchImg,
+  skirtImg,
+  casualImg,
+  pocketWatchImg,
+  wristWatchImg,
+  partyImg,
+  coatImg,
+  sportsImg,
+  formalImg,
+  shortsImg,
+];
 
-const imageHovers = [jacketImgHover, shirtImgHover, trenchImgHover, 
-                    skirtImgHover, casualImgHover, pocketWatchImgHover, 
-                    wristWatchImgHover, partyImgHover, coatImgHover, 
-                    sportsImgHover, formalImgHover, shortsImgHover];
-
+const imageHovers = [
+  jacketImgHover,
+  shirtImgHover,
+  trenchImgHover,
+  skirtImgHover,
+  casualImgHover,
+  pocketWatchImgHover,
+  wristWatchImgHover,
+  partyImgHover,
+  coatImgHover,
+  sportsImgHover,
+  formalImgHover,
+  shortsImgHover,
+];
 
 /*
 ================================================================================================================================
@@ -89,36 +118,54 @@ UI Class
 ================================================================================================================================
 */
 class UI {
-    static titleSubString() {
-        const vets = document.querySelectorAll('.vet');
+  static titleSubString() {
+    const vets = document.querySelectorAll(".vet");
 
-        vets.forEach(vet => {
-        const vetText = vet.textContent.trim().length;
-            if(vetText >= 16) {
-                const vetSlice = vet.textContent.trim();
-                const newVet = vetSlice.substring(0, 16) + '...';
-                vet.textContent = newVet;
-                return vet.textContent = newVet;
-            }
-        });
-    }
+    vets.forEach((vet) => {
+      const vetText = vet.textContent.trim().length;
+      if (vetText >= 16) {
+        const vetSlice = vet.textContent.trim();
+        const newVet = vetSlice.substring(0, 16) + "...";
+        vet.textContent = newVet;
+        return (vet.textContent = newVet);
+      }
+    });
+  }
 
-    static showcase() {
-        const textOne = document.querySelector('.text-one');
-        const b1 = document.querySelector('.b-1');
-        const b2 = document.querySelector('.b-2');
-        const b3 = document.querySelector('.b-3');
-        console.log(b1);
-        setTimeout(() => {
-            textOne.classList.remove('text');
-            b1.classList.add('hide');
-            b2.classList.add('hide');
+  static showcase() {
+    const textOne = document.querySelector(".text-one");
+    const textTwo = document.querySelector(".text-two");
+    const textThree = document.querySelector(".text-three");
+    const b1 = document.querySelector(".b-1");
+    const b2 = document.querySelector(".b-2");
+    const b3 = document.querySelector(".b-3");
+    const dot1 = document.querySelector(".dot-1");
+    const dot2 = document.querySelector(".dot-2");
+    const dot3 = document.querySelector(".dot-3");
 
-        }, 7000);
-    }
+    setTimeout(() => {
+      b1.classList.add("hide");
+      b2.classList.remove("hide");
+
+      textTwo.classList.add("slide-in");
+
+      dot1.classList.remove("highlight");
+      dot2.classList.add("highlight");
+    }, 7000);
+
+    setTimeout(() => {
+      b1.classList.add("hide");
+      b2.classList.add("hide");
+      b3.classList.remove("hide");
+
+      textThree.classList.add("slide-in");
+
+      dot1.classList.remove("highlight");
+      dot2.classList.remove("highlight");
+      dot3.classList.add("highlight");
+    }, 14000);
+  }
 }
-
-
 
 /*
 ================================================================================================================================
@@ -126,54 +173,48 @@ On Loading the page
 ================================================================================================================================
 */
 function onLoading() {
-    UI.titleSubString();
-    UI.showcase();
+  UI.titleSubString();
+  UI.showcase();
 }
-
 
 /*
 ================================================================================================================================
 Event DOMConentLoaded
 ================================================================================================================================
 */
-document.addEventListener('DOMContentLoaded', (e) => {
-    onLoading();
-})
-
-
-
+document.addEventListener("DOMContentLoaded", (e) => {
+  onLoading();
+});
 
 /*
 ================================================================================================================================
 Eventlistener
 ================================================================================================================================
 */
-let k = '1';
-for(let i = ''; i < '12'; i++) {
-    const x = k++;
-    const c = x - 1;
-    
-    
-    const no = document.querySelector('#no' + x);
-/* ============= mouse over ================ */
-    no.addEventListener('mouseover', (e) => {
-        const shadow = '0 20px 25px -5px rgba(0, 0, 0, 0.1), -10px 10px 10px 5px rgba(0, 0, 0, 0.04)';
-        no.style.boxShadow = shadow;
-        no.style.transform = 'scale(1.0)';
-        imgTags[c].style.transform = 'Scale(1.2)';
-        imgTags[c].style.backgroundImage = imageHovers[c];
-    });
+let k = "1";
+for (let i = ""; i < "12"; i++) {
+  const x = k++;
+  const c = x - 1;
 
+  const no = document.querySelector("#no" + x);
+  /* ============= mouse over ================ */
+  no.addEventListener("mouseover", (e) => {
+    const shadow =
+      "0 20px 25px -5px rgba(0, 0, 0, 0.1), -10px 10px 10px 5px rgba(0, 0, 0, 0.04)";
+    no.style.boxShadow = shadow;
+    no.style.transform = "scale(1.0)";
+    imgTags[c].style.transform = "Scale(1.2)";
+    imgTags[c].style.backgroundImage = imageHovers[c];
+  });
 
-/* ============= mouse leave ================ */
-no.addEventListener('mouseleave', (e) => {
-    no.style.boxShadow = 'var(--shadow-1)';
-    no.style.transform = 'none';
-    imgTags[c].style.transform = 'none';
+  /* ============= mouse leave ================ */
+  no.addEventListener("mouseleave", (e) => {
+    no.style.boxShadow = "var(--shadow-1)";
+    no.style.transform = "none";
+    imgTags[c].style.transform = "none";
     imgTags[c].style.backgroundImage = images[c];
-});
+  });
 }
-
 
 /*
 ================================================================================================================================
