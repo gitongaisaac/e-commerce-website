@@ -133,27 +133,29 @@ class UI {
   }
 
   static showcase() {
-    const textOne = document.querySelector(".text-one");
-    const textTwo = document.querySelector(".text-two");
-    const textThree = document.querySelector(".text-three");
     const b1 = document.querySelector(".b-1");
     const b2 = document.querySelector(".b-2");
     const b3 = document.querySelector(".b-3");
+    const textOne = document.querySelector(".text-one");
+    const textTwo = document.querySelector(".text-two");
+    const textThree = document.querySelector(".text-three");
     const dot1 = document.querySelector(".dot-1");
     const dot2 = document.querySelector(".dot-2");
     const dot3 = document.querySelector(".dot-3");
 
-    setTimeout(() => {
+    setInterval(() => {
       b1.classList.add("hide");
       b2.classList.remove("hide");
+      b3.classList.add("hide");
 
       textTwo.classList.add("slide-in");
 
       dot1.classList.remove("highlight");
       dot2.classList.add("highlight");
+      dot3.classList.remove("highlight");
     }, 7000);
 
-    setTimeout(() => {
+    setInterval(() => {
       b1.classList.add("hide");
       b2.classList.add("hide");
       b3.classList.remove("hide");
@@ -164,6 +166,16 @@ class UI {
       dot2.classList.remove("highlight");
       dot3.classList.add("highlight");
     }, 14000);
+
+    setInterval(() => {
+      b1.classList.remove("hide");
+      b2.classList.add("hide");
+      b3.classList.add("hide");
+
+      dot1.classList.add("highlight");
+      dot2.classList.remove("highlight");
+      dot3.classList.remove("highlight");
+    }, 21000);
   }
 }
 

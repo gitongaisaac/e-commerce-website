@@ -309,7 +309,6 @@ Banner
 
 .banner {
   height: 450px;
-  transition: 4s;
 }
 
 .showcase {
@@ -373,6 +372,7 @@ Banner
   margin: 10px 5rem;
   padding: 40px;
   z-index: 5;
+  transition: 2s;
 }
 
 .text .trending {
