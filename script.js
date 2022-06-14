@@ -156,6 +156,11 @@ class UI {
     }, 7000);
 
     setInterval(() => {
+      b2.classList.add("slide-out");
+    }, 13000);
+
+    setInterval(() => {
+      b2.classList.add("slide-out");
       b1.classList.add("hide");
       b2.classList.add("hide");
       b3.classList.remove("hide");
