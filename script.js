@@ -184,6 +184,10 @@ class UI {
   }
 }
 
+const dots1 = document.querySelector("#dots-1");
+dots1.addEventListener("click", (e) => {
+  console.log("it works");
+});
 /*
 ================================================================================================================================
 On Loading the page

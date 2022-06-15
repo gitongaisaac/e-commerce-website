@@ -8,7 +8,7 @@ Header
   overflow: hidden;
   border-bottom: 1px solid var(--sip-300);
   background-color: var(--tone-600);
-  animation-name: slidebottom;
+  animation-name: slide-bottom;
   animation-duration: 3s;
   animation-fill-mode: forwards;
 }
@@ -98,7 +98,7 @@ Navbar
   border-bottom: 1px solid var(--sip-300);
   background-color: var(--grey-100);
   border-radius: 0 0 30px 30px;
-  animation-name: slidebottom;
+  animation-name: slide-bottom;
   animation-duration: 3s;
   animation-fill-mode: forwards;
 }
@@ -170,7 +170,7 @@ Services
 */
 .services {
   position: relative;
-  animation-name: slidebottom;
+  animation-name: slide-bottom;
   animation-duration: 3s;
   animation-fill-mode: forwards;
 }
@@ -265,7 +265,7 @@ Services
 .item:hover {
   color: var(--faded-600);
   border-bottom: 2px solid var(--sip-400);
-  border-radius: 30px;
+  /* border-radius: 30px; */
 }
 
 .item:focus {
@@ -284,7 +284,7 @@ Services
   }
 }
 
-@keyframes slidebottom {
+@keyframes slide-bottom {
   0% {
     top: -500px;
   }
@@ -309,11 +309,12 @@ Banner
 
 .banner {
   height: 450px;
+  max-width: 1400px;
 }
 
 .showcase {
   position: relative;
-  animation-name: slidetop;
+  animation-name: slide-top;
   animation-duration: 3s;
   animation-fill-mode: forwards;
   background-repeat: no-repeat;
@@ -326,10 +327,6 @@ Banner
   border-radius: 5px;
   z-index: 1;
 }
-
-/* .b-1 {
-  opacity: inherit;
-} */
 
 .banner-one {
   background-image: url("../images/banner-1.jpg");
@@ -350,32 +347,23 @@ Banner
   justify-content: flex-start;
   margin: 10px 5rem;
   padding: 40px;
-  animation-name: slideright;
+  animation-name: slide-right;
   animation-duration: 4s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
 }
 
 .slide-in {
-  animation-name: slideright;
+  animation-name: slide-right;
   animation-duration: 3s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
 }
 
 .slide-out {
-  animation-name: slideleft;
+  animation-name: slide-left;
   animation-duration: 1s;
   animation-timing-function: ease-out;
-}
-
-@keyframes slideleft {
-  0% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 0;
-  }
 }
 
 .text {
@@ -431,7 +419,7 @@ Banner
 .banners .dot {
   position: relative;
   top: -50px;
-  animation-name: dotsslide;
+  animation-name: dots-slide;
   animation-duration: 4s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
@@ -448,7 +436,7 @@ Banner
   background-color: var(--faded-500);
 }
 
-@keyframes slidetop {
+@keyframes slide-top {
   0% {
     right: -1500px;
   }
@@ -459,7 +447,16 @@ Banner
   }
 }
 
-@keyframes slideright {
+@keyframes slide-left {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slide-right {
   0% {
     left: -500px;
   }
@@ -469,7 +466,7 @@ Banner
   }
 }
 
-@keyframes dotsslide {
+@keyframes dots-slide {
   0% {
     top: 200px;
   }
@@ -486,7 +483,7 @@ Product
 */
 .products {
   position: relative;
-  animation-name: productsslide;
+  animation-name: products-slide;
   animation-duration: 3s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
@@ -571,7 +568,7 @@ Product
   background-color: var(--faded-500);
 }
 
-@keyframes productsslide {
+@keyframes products-slide {
   0% {
     top: 120px;
   }
