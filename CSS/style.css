@@ -115,7 +115,7 @@ Navbar
 .input {
   border: 1.5px solid var(--flip-700);
   border-radius: 15px;
-  width: 800px;
+  width: 700px;
   padding: 0 10px;
 }
 
@@ -126,7 +126,7 @@ Navbar
 .input input {
   padding: 0 10px;
   background-color: var(--grey-100);
-  width: 700px;
+  width: 600px;
   height: 20px;
 }
 
@@ -275,24 +275,6 @@ Services
   outline: none;
 }
 
-@keyframes dropdown {
-  0% {
-    top: 300px;
-  }
-  25% {
-    top: 300px;
-  }
-}
-
-@keyframes slide-bottom {
-  0% {
-    top: -500px;
-  }
-  100% {
-    top: 0px;
-  }
-}
-
 /*
 ================================================================================================================================
 Banner
@@ -301,28 +283,24 @@ Banner
 .snap {
   display: flex;
   margin-bottom: 40px;
-  max-width: 1400px;
+  max-width: 1300px;
   overflow: hidden;
-  margin: auto;
+  margin: 0 auto;
   transition: var(--transition-3);
 }
 
 .banner {
   height: 450px;
-  max-width: 1400px;
+  max-width: 1300px;
 }
 
 .showcase {
   position: relative;
-  animation-name: slide-top;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
   height: 450px;
-  max-width: 1400px;
-  width: 1400px;
+  width: 1300px;
   margin: auto;
   border-radius: 5px;
   z-index: 1;
@@ -348,9 +326,9 @@ Banner
   margin: 10px 5rem;
   padding: 40px;
   animation-name: slide-right;
-  animation-duration: 4s;
+  /* animation-duration: 4s;
   animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
+  animation-timing-function: ease-in; */
 }
 
 .slide-in {
@@ -434,46 +412,6 @@ Banner
 
 .dot:hover {
   background-color: var(--faded-500);
-}
-
-@keyframes slide-top {
-  0% {
-    right: -1500px;
-  }
-
-  100% {
-    right: 0px;
-    transform: rotateX(0deg);
-  }
-}
-
-@keyframes slide-left {
-  0% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes slide-right {
-  0% {
-    left: -500px;
-  }
-
-  100% {
-    left: 0px;
-  }
-}
-
-@keyframes dots-slide {
-  0% {
-    top: 200px;
-  }
-
-  100% {
-    top: -50px;
-  }
 }
 
 /*
@@ -566,16 +504,6 @@ Product
 .highlight {
   background-color: #f0932b;
   background-color: var(--faded-500);
-}
-
-@keyframes products-slide {
-  0% {
-    top: 120px;
-  }
-
-  100% {
-    top: 0px;
-  }
 }
 
 /*
@@ -990,117 +918,53 @@ Display
   color: var(--light-color);
 }
 
-@keyframes options {
-  0% {
-    right: -60px;
-  }
-  100% {
-    right: 0px;
-  }
-}
-
-@keyframes options-out {
-  0% {
-    right: 0px;
-  }
-  100% {
-    right: -60px;
-  }
-}
-
 .jacket {
   background-image: url("../images/products/jacket-3.jpg");
 }
-
-/* .jacket:hover {
-    background-image: url("../images/products/jacket-4.jpg");
-} */
 
 .shirt {
   background-image: url("../images/products/shirt-1.jpg");
 }
 
-/* .shirt:hover {
-    background-image: url("../images/products/shirt-2.jpg");
-} */
-
 .trench {
   background-image: url("../images/products/jacket-5.jpg");
 }
-/* .trench:hover {
-    background-image: url("../images/products/jacket-6.jpg");
-} */
 
 .skirt {
   background-image: url("../images/products/clothes-3.jpg");
 }
 
-/* .skirt:hover {
-    background-image: url("../images/products/clothes-4.jpg");
-} */
-
 .casual {
   background-image: url("../images/products/shoe-2.jpg");
 }
-/* .casual:hover {
-    background-image: url("../images/products/shoe-2_1.jpg");
-} */
 
 .pocket-watch {
   background-image: url("../images/products/watch-3.jpg");
 }
 
-/* .pocket-watch:hover {
-    background-image: url("../images/products/watch-4.jpg");
-} */
-
 .wrist-watch {
   background-image: url("../images/products/watch-1.jpg");
 }
-
-/* .wrist-watch:hover {
-    background-image: url("../images/products/watch-2.jpg");
-} */
 
 .party {
   background-image: url("../images/products/party-wear-1.jpg");
 }
 
-/* .party:hover {
-    background-image: url("../images/products/party-wear-2.jpg");
-} */
-
 .coat {
   background-image: url("../images/products/jacket-1.jpg");
 }
-
-/* .coat:hover {
-    background-image: url("../images/products/jacket-2.jpg");
-} */
 
 .sports {
   background-image: url("../images/products/sports-2.jpg");
 }
 
-/* .sports:hover {
-    background-image: url("../images/products/sports-4.jpg");
-} */
-
 .formal {
   background-image: url("../images/products/shoe-1.jpg");
 }
 
-/* .formal:hover {
-    background-image: url("../images/products/shoe-1_1.jpg");
-} */
-
 .shorts {
   background-image: url("../images/products/shorts-1.jpg");
 }
-
-/* .shorts:hover {
-    background-image: url("../images/products/shorts-2.jpg");
-} */
 
 .new-title {
   color: var(--red-500);
@@ -1300,3 +1164,90 @@ Footer
 .copyright h5 {
   letter-spacing: 1.5px;
 }
+
+/* Animations */
+/* @keyframes dropdown {
+  0% {
+    top: 300px;
+  }
+  25% {
+    top: 300px;
+  }
+}
+
+@keyframes slide-bottom {
+  0% {
+    top: -500px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    right: -1500px;
+  }
+
+  100% {
+    right: 0px;
+    transform: rotateX(0deg);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    left: -500px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes dots-slide {
+  0% {
+    top: 200px;
+  }
+
+  100% {
+    top: -50px;
+  }
+}
+
+@keyframes products-slide {
+  0% {
+    top: 120px;
+  }
+
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes options {
+  0% {
+    right: -60px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+@keyframes options-out {
+  0% {
+    right: 0px;
+  }
+  100% {
+    right: -60px;
+  }
+} */

@@ -450,8 +450,7 @@ Box Shadows
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
   --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
-
-} 
+}
 /* ===== End of root ===== */
 
 /* 
@@ -488,19 +487,18 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 ::-webkit-scrollbar {
-  width: 8px; 
+  width: 8px;
   height: 8px;
 }
 
 ::-webkit-scrollbar-track {
   background-color: var(--background-color);
-
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--grey-500); 
+  background-color: var(--grey-500);
   border-radius: 50px;
-  border: 1px solid var(--grey-300); 
+  border: 1px solid var(--grey-300);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -580,6 +578,7 @@ a {
   cursor: pointer;
   text-decoration: none;
   color: var(--text-color);
+  transition: 0.2s;
 }
 
 a:hover,
@@ -986,7 +985,6 @@ Alerts
   color: var(--grey-100);
 }
 
-
 /* 
 ================================================================================================================================
 Dots
@@ -1005,8 +1003,6 @@ Dots
   padding: 5px;
   border-radius: 50%;
 }
-
-
 
 /* 
 ================================================================================================================================
@@ -1497,7 +1493,6 @@ Margins
 .m-5 {
   margin: var(--font-size-10);
 }
-
 
 /* 
 ================================================================================================================================

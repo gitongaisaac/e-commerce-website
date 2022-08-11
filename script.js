@@ -1,6 +1,6 @@
 /*
 ================================================================================================================================
-Dom Elements
+Dom Element Selectors
 ================================================================================================================================
 */
 /* ============= Image divs ================ */
@@ -20,6 +20,16 @@ const shorts = document.querySelector(".shorts");
 /* ============= Other Elements ================ */
 const viewImgs = document.querySelectorAll(".view-img");
 const views = document.querySelectorAll(".views");
+const b1 = document.querySelector(".b-1");
+const b2 = document.querySelector(".b-2");
+const b3 = document.querySelector(".b-3");
+const textOne = document.querySelector(".text-one");
+const textTwo = document.querySelector(".text-two");
+const textThree = document.querySelector(".text-three");
+const dot1 = document.querySelector(".dot-1");
+const dot2 = document.querySelector(".dot-2");
+const dot3 = document.querySelector(".dot-3");
+const dots1 = document.querySelector("#dots-1");
 
 /*
 ================================================================================================================================
@@ -132,47 +142,33 @@ class UI {
     });
   }
 
-  static showcase() {
-    const b1 = document.querySelector(".b-1");
-    const b2 = document.querySelector(".b-2");
-    const b3 = document.querySelector(".b-3");
-    const textOne = document.querySelector(".text-one");
-    const textTwo = document.querySelector(".text-two");
-    const textThree = document.querySelector(".text-three");
-    const dot1 = document.querySelector(".dot-1");
-    const dot2 = document.querySelector(".dot-2");
-    const dot3 = document.querySelector(".dot-3");
-
-    setInterval(() => {
+  static autoNavigation() {
+    const showcaseSlider1 = setInterval(() => {
       b1.classList.add("hide");
       b2.classList.remove("hide");
       b3.classList.add("hide");
 
-      textTwo.classList.add("slide-in");
+      // textTwo.classList.add("slide-in");
 
       dot1.classList.remove("highlight");
       dot2.classList.add("highlight");
       dot3.classList.remove("highlight");
     }, 7000);
 
-    setInterval(() => {
-      b2.classList.add("slide-out");
-    }, 13000);
-
-    setInterval(() => {
-      b2.classList.add("slide-out");
+    const showcaseSlider2 = setInterval(() => {
+      // b2.classList.add("slide-out");
       b1.classList.add("hide");
       b2.classList.add("hide");
       b3.classList.remove("hide");
 
-      textThree.classList.add("slide-in");
+      // textThree.classList.add("slide-in");
 
       dot1.classList.remove("highlight");
       dot2.classList.remove("highlight");
       dot3.classList.add("highlight");
     }, 14000);
 
-    setInterval(() => {
+    const showcaseSlider3 = setInterval(() => {
       b1.classList.remove("hide");
       b2.classList.add("hide");
       b3.classList.add("hide");
@@ -181,13 +177,48 @@ class UI {
       dot2.classList.remove("highlight");
       dot3.classList.remove("highlight");
     }, 21000);
+
+    UI.manualNavigation(showcaseSlider1, showcaseSlider2, showcaseSlider3);
+  }
+
+  static manualNavigation(e) {
+    if (e.target.classList.contains("dot-1")) {
+      b1.classList.remove("hide");
+      b1.classList.add("hide");
+      b1.classList.add("hide");
+
+      dot1.classList.add("highlight");
+      dot2.classList.remove("highlight");
+      dot3.classList.remove("highlight");
+    } else if (e.target.classList.contains("dot-2")) {
+      b1.classList.add("hide");
+      b1.classList.remove("hide");
+      b1.classList.add("hide");
+
+      dot1.classList.remove("highlight");
+      dot2.classList.add("highlight");
+      dot3.classList.remove("highlight");
+    } else if (e.target.classList.contains("dot-3")) {
+      b1.classList.add("hide");
+      b1.classList.add("hide");
+      b1.classList.remove("hide");
+
+      dot1.classList.remove("highlight");
+      dot2.classList.remove("highlight");
+      dot3.classList.add("highlight");
+    }
   }
 }
 
-const dots1 = document.querySelector("#dots-1");
 dots1.addEventListener("click", (e) => {
-  console.log("it works");
+  UI.manualNavigation(e);
+  setTimeout(() => {
+    clearInterval(showcaseSlider1);
+    clearInterval(showcaseSlider2);
+    clearInterval(showcaseSlider3);
+  }, 7000);
 });
+
 /*
 ================================================================================================================================
 On Loading the page
@@ -195,7 +226,7 @@ On Loading the page
 */
 function onLoading() {
   UI.titleSubString();
-  UI.showcase();
+  UI.autoNavigation();
 }
 
 /*

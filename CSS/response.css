@@ -1,0 +1,59 @@
+/* Media Querries and resposiveness */
+@media (max-width: 1330px) {
+  .snap {
+    max-width: 1100px;
+  }
+
+  .banner {
+    max-width: 1100px;
+  }
+
+  .showcase {
+    width: 1100px;
+  }
+}
+
+@media (max-width: 1165px) {
+  .snap {
+    max-width: 900px;
+  }
+
+  .banner {
+    max-width: 900px;
+  }
+
+  .showcase {
+    width: 900px;
+  }
+
+  .input {
+    width: 500px;
+  }
+
+  .input input {
+    width: 400px;
+  }
+
+  .text {
+    height: 270px;
+    margin: 5px 3rem;
+    padding: 40px;
+    left: 50px;
+  }
+
+  .text .trending {
+    font-size: 25px;
+  }
+
+  .text h1 {
+    font-size: 27px;
+  }
+
+  .text span {
+    font-size: 25px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+}
