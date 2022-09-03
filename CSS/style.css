@@ -1166,7 +1166,7 @@ Footer
 }
 
 /* Animations */
-/* @keyframes dropdown {
+@keyframes dropdown {
   0% {
     top: 300px;
   }
@@ -1175,7 +1175,7 @@ Footer
   }
 }
 
-@keyframes slide-bottom {
+/* @keyframes slide-bottom {
   0% {
     top: -500px;
   }

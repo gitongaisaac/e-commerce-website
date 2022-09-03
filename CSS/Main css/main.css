@@ -584,6 +584,7 @@ a {
 a:hover,
 a:focus {
   color: var(--primary-700);
+  transition: 0.2s;
 }
 
 /* :focus {
