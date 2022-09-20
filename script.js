@@ -130,14 +130,28 @@ UI Class
 class UI {
   static titleSubString() {
     const vets = document.querySelectorAll(".vet");
+    const titles = document.querySelectorAll(".seller-description .title");
 
+    /* showcase substring */
     vets.forEach((vet) => {
       const vetText = vet.textContent.trim().length;
       if (vetText >= 16) {
         const vetSlice = vet.textContent.trim();
-        const newVet = vetSlice.substring(0, 16) + "...";
+        const newVet = vetSlice.substring(0, 14) + "...";
         vet.textContent = newVet;
         return (vet.textContent = newVet);
+      }
+    });
+
+    /* seller substring */
+    titles.forEach((title) => {
+      const titleText = title.textContent.trim().length;
+
+      if (titleText >= 12) {
+        const titleSlice = title.textContent.trim();
+        const newTitle = titleSlice.substring(0, 12) + "...";
+        title.textContent = newTitle;
+        return (title.textContent = newTitle);
       }
     });
   }
@@ -226,6 +240,7 @@ On Loading the page
 */
 function onLoading() {
   UI.titleSubString();
+  UI.sellerSubstring();
   UI.autoNavigation();
 }
 

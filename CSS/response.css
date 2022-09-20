@@ -1,4 +1,10 @@
 /* Media Querries and resposiveness */
+@media (max-width: 1380px) {
+  .deals img {
+    width: 330px;
+  }
+}
+
 @media (max-width: 1330px) {
   .snap {
     max-width: 1100px;
@@ -10,6 +16,37 @@
 
   .showcase {
     width: 1100px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .tese-1 {
+    display: none;
+  }
+
+  .tese-2 {
+    display: contents;
+  }
+
+  .testimony-services.tese-2 .cards-flex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    justify-items: center;
+    margin: 40px 0;
+  }
+
+  .testimony-services.tese-2 .card {
+    width: 400px;
+  }
+
+  .testimony-services.tese-2 h4.display-title {
+    width: 430px;
+  }
+
+  .testimony-services.tese-2 .summer-collection {
+    width: 800px;
+    margin: auto;
   }
 }
 

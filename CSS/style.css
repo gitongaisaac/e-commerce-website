@@ -218,7 +218,7 @@ Services
   transition: var(--transition-3);
 }
 
-.drop-down .dispaly-title {
+.drop-down .display-title {
   margin: 0 0 10px 0;
 }
 
@@ -391,7 +391,8 @@ Banner
 .banners .dots {
   position: absolute;
   left: 50%;
-  gap: 30px;
+  /* left: 50%;
+  gap: 30px; */
 }
 
 .banners .dot {
@@ -533,8 +534,8 @@ Display
   top: 20px;
 }
 
-.category-seller .card {
-  width: 300px;
+.category.card {
+  max-width: 300px;
   border: 1px solid var(--grey-400);
   background-color: var(--tone-100);
 }
@@ -575,7 +576,7 @@ Display
 
 .seller-description .title {
   font-family: var(--bodyfont-9);
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .category-seller a:hover {
@@ -593,7 +594,7 @@ Display
 }
 
 .seller-item img {
-  width: 70px;
+  width: 50px;
   padding: 20px 0;
 }
 
@@ -673,7 +674,7 @@ Display
   scroll-snap-align: start;
 }
 
-.dispaly-title {
+.display-title {
   font-weight: 600;
   margin: 0 10px 20px 10px;
   padding: 10px;
@@ -683,7 +684,7 @@ Display
 .display-showcase .card {
   padding: 10px 10px;
   overflow: visible;
-  width: 310px;
+  max-width: 310px;
   border: 1px solid var(--grey-400);
   background-color: var(--tone-100);
   box-shadow: none;
@@ -692,6 +693,10 @@ Display
 .collection {
   justify-content: flex-start;
   gap: 15px;
+}
+
+.collection.card {
+  width: 500px;
 }
 
 .collection img {
@@ -707,6 +712,16 @@ Display
   font-size: 17px;
   color: var(--grey-600);
   font-weight: 600;
+}
+
+.collection-description .vet {
+  animation: walk-left;
+  animation-duration: 3s;
+}
+
+@keyframes walk-left {
+  0% {
+  }
 }
 
 .item-name {
@@ -804,7 +819,7 @@ Display
 .new .card {
   position: relative;
   overflow: hidden;
-  width: 230px;
+  max-width: 230px;
   height: 420px;
   border: 1px solid var(--grey-400);
   box-shadow: var(--shadow-1);
@@ -975,11 +990,15 @@ Display
   padding: 5px 0;
 }
 
+.tese-2 {
+  display: none;
+}
+
 .testimony-services .grid {
   grid-template-columns: 1fr 2fr 1fr;
 }
 
-.testimony-services .dispaly-title {
+.testimony-services .display-title {
   text-align: left;
 }
 
@@ -987,7 +1006,7 @@ Display
   color: var(--faded-500);
 }
 
-.testimony-services .dispaly-title {
+.testimony-services .display-title {
   font-size: 20px;
 }
 
@@ -1037,6 +1056,7 @@ Display
 
 .blade .flex {
   justify-content: flex-start;
+  gap: 0;
 }
 
 .blade .flex i:hover {

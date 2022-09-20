@@ -1012,13 +1012,13 @@ Cards and pop-ups
 */
 
 .card {
-  /* width: 500px; */
   background-color: #fff;
   color: #333;
   padding: 20px;
   margin: 10px;
   border-radius: 10px;
   box-shadow: var(--shadow-4);
+  /* width: 500px; */
 }
 
 .pop-up {
