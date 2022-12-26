@@ -103,9 +103,6 @@ Nav-bar
   z-index: 9;
 }
 
-.navigators.card {
-}
-
 .navigate {
   display: flex;
   justify-content: center;
@@ -579,6 +576,21 @@ Display
 
 .category-list p {
   letter-spacing: 1px;
+}
+
+.category-sub-item ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+  margin: 0px;
+  border: none;
+  height: 30px;
+  width: 250px;
+}
+
+.category-list .plus {
+  background-color: red;
 }
 
 .seller {

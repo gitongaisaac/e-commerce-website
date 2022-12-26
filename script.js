@@ -30,6 +30,8 @@ const dot1 = document.querySelector(".dot-1");
 const dot2 = document.querySelector(".dot-2");
 const dot3 = document.querySelector(".dot-3");
 const dots1 = document.querySelector("#dots-1");
+const subItems = document.querySelectorAll(".category-sub-item");
+const pluss = document.querySelectorAll(".fa-plus");
 
 /*
 ================================================================================================================================
@@ -222,6 +224,17 @@ class UI {
       dot3.classList.add("highlight");
     }
   }
+
+  static categorySubItem() {
+    pluss.forEach((plus) => {
+      subItems.forEach((subItem) => {
+        plus.addEventListener("click", (e) => {
+          subItem.classList.toggle("hide");
+          console.log(e);
+        });
+      });
+    });
+  }
 }
 
 dots1.addEventListener("click", (e) => {
@@ -235,6 +248,12 @@ dots1.addEventListener("click", (e) => {
 
 /*
 ================================================================================================================================
+Substring Hover
+================================================================================================================================
+*/
+
+/*
+================================================================================================================================
 On Loading the page
 ================================================================================================================================
 */
@@ -242,6 +261,7 @@ function onLoading() {
   UI.titleSubString();
   UI.sellerSubstring();
   UI.autoNavigation();
+  UI.categorySubItem();
 }
 
 /*
@@ -282,12 +302,6 @@ for (let i = ""; i < "12"; i++) {
     imgTags[c].style.backgroundImage = images[c];
   });
 }
-
-/*
-================================================================================================================================
-filter
-================================================================================================================================
-*/
 
 /*
 ================================================================================================================================
