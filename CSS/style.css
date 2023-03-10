@@ -3,6 +3,40 @@
 Header
 ================================================================================================================================
 */
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  z-index: 1000000;
+  width: 800px;
+}
+
+.popup .card {
+  padding: 0px;
+  border-radius: 10px;
+}
+
+.popup .img {
+  height: 400px;
+  border-radius: 10px;
+}
+
+.popup input {
+  border: 2px solid var(--grey-300);
+  border-radius: 5px;
+  padding: 5px;
+  width: 300px;
+}
+
+.popup button {
+  margin-top: 30px;
+  font-weight: 500;
+  margin-left: 20%;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+}
+
 .header {
   position: relative;
   overflow: hidden;
