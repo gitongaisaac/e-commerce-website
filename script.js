@@ -18,20 +18,21 @@ const formal = document.querySelector(".formal");
 const shorts = document.querySelector(".shorts");
 
 /* ============= Other Elements ================ */
+const subItems = document.querySelectorAll(".category-sub-item");
+const news = document.querySelector(".newsletter .close");
+const textThree = document.querySelector(".text-three");
 const viewImgs = document.querySelectorAll(".view-img");
-const views = document.querySelectorAll(".views");
-const b1 = document.querySelector(".b-1");
-const b2 = document.querySelector(".b-2");
-const b3 = document.querySelector(".b-3");
+const pluss = document.querySelectorAll(".fa-plus");
 const textOne = document.querySelector(".text-one");
 const textTwo = document.querySelector(".text-two");
-const textThree = document.querySelector(".text-three");
+const views = document.querySelectorAll(".views");
+const dots1 = document.querySelector("#dots-1");
 const dot1 = document.querySelector(".dot-1");
 const dot2 = document.querySelector(".dot-2");
 const dot3 = document.querySelector(".dot-3");
-const dots1 = document.querySelector("#dots-1");
-const subItems = document.querySelectorAll(".category-sub-item");
-const pluss = document.querySelectorAll(".fa-plus");
+const b1 = document.querySelector(".b-1");
+const b2 = document.querySelector(".b-2");
+const b3 = document.querySelector(".b-3");
 
 /*
 ================================================================================================================================
@@ -158,6 +159,19 @@ class UI {
     });
   }
 
+  static newsletter() {
+    const element = news.parentElement.parentElement.parentElement;
+    news.addEventListener("click", (e) => {
+      console.log("The close button has been closed");
+      element.classList.toggle("hide");
+    });
+
+    if (element.classList != "hide") {
+      console.log("The class is not hide");
+      news.style.backdropFilter = "blur(50px)";
+    }
+  }
+
   static autoNavigation() {
     const showcaseSlider1 = setInterval(() => {
       b1.classList.add("hide");
@@ -259,9 +273,10 @@ On Loading the page
 */
 function onLoading() {
   UI.titleSubString();
-  UI.sellerSubstring();
-  UI.autoNavigation();
+  // UI.sellerSubstring();
+  // UI.autoNavigation();
   UI.categorySubItem();
+  UI.newsletter();
 }
 
 /*
