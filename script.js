@@ -3,6 +3,8 @@
 Dom Element Selectors
 ================================================================================================================================
 */
+const popCard = document.querySelector(".pop-card");
+
 /* ============= Image divs ================ */
 const jacket = document.querySelector(".jacket");
 const shirt = document.querySelector(".shirt");
@@ -20,6 +22,7 @@ const shorts = document.querySelector(".shorts");
 /* ============= Other Elements ================ */
 const subItems = document.querySelectorAll(".category-sub-item");
 const news = document.querySelector(".newsletter .close");
+const newsletterModal = document.querySelector(".newsletter");
 const textThree = document.querySelector(".text-three");
 const viewImgs = document.querySelectorAll(".view-img");
 const pluss = document.querySelectorAll(".fa-plus");
@@ -162,14 +165,14 @@ class UI {
   static newsletter() {
     const element = news.parentElement.parentElement.parentElement;
     news.addEventListener("click", (e) => {
-      console.log("The close button has been closed");
-      element.classList.toggle("hide");
+      if (!e.target.classList.contains(".display-none")) {
+        newsletterModal.classList.add("fade-out");
+        setTimeout(() => {
+          newsletterModal.classList.add("display-none");
+          newsletterModal.classList.remove("position");
+        }, 1000);
+      }
     });
-
-    if (element.classList != "hide") {
-      console.log("The class is not hide");
-      news.style.backdropFilter = "blur(50px)";
-    }
   }
 
   static autoNavigation() {

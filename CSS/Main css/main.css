@@ -48,7 +48,6 @@ ROOT
 Colors || Grey, base, shade, primary, secondary, tertiary, sip, gin, low, stroke, ting, block, vet, spin, split, flip, red,
 ================================================================================================================================
 */
-
   /* Grey shades*/
   --grey-100: #f8fafc;
   --grey-200: #f1f5f9;
@@ -297,6 +296,7 @@ Colors || Grey, base, shade, primary, secondary, tertiary, sip, gin, low, stroke
   --less-dark: #333;
   --light-color: #ffffff;
   --link-color: #0000ff;
+  --grey-dark: #1a1a1a;
 
   /* 
 ================================================================================================================================
@@ -456,54 +456,7 @@ Box Shadows
 /* 
 ================================================================================================================================
 ================================================================================================================================
-================================================================================================================================
-================================================================================================================================
-================================================================================================================================
 */
-
-/* 
-================================================================================================================================
-Scrollsbar
-================================================================================================================================
-*/
-
-body::-webkit-scrollbar {
-  width: 8px; /* width of the entire scrollbar */
-  height: 8px;
-}
-
-body::-webkit-scrollbar-track {
-  background: var(--body-color); /* color of the tracking area */
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: var(--grey-700); /* color of the scroll thumb */
-  border-radius: 50px; /* roundness of the scroll thumb */
-  border: 1px solid var(--grey-300); /* creates padding around scroll thumb */
-}
-
-body::-webkit-scrollbar-thumb:hover {
-  background-color: var(--grey-600);
-}
-
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: var(--background-color);
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--grey-500);
-  border-radius: 50px;
-  border: 1px solid var(--grey-300);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: var(--grey-300);
-}
 
 /* 
 ================================================================================================================================
@@ -882,7 +835,7 @@ Buttons
 
 .btn:hover,
 .btn:focus {
-  transform: scale(0.98);
+  transform: scale(0.95);
 }
 
 .btn-no-hover:hover {

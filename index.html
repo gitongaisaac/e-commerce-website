@@ -20,13 +20,13 @@
     Newsletter
     ================================================================================================================================
   -->
-    <section class="newsletter">
+    <section class="newsletter position">
       <div class="pop-card card">
+        <i class="fa-solid fa-xmark close"></i>
         <div class="grid">
           <img src="/images/newsletter.png" alt="" class="img" />
           <div class="news">
-            <i class="fa-solid fa-xmark close"></i>
-            <h4 class="bold">Subscribe NewsLetter.</h4>
+            <h4 class="bold">Subscribe to our NewsLetter.</h4>
             <p>
               Subscribe the Anon to get latest products and discount updates.
             </p>
@@ -67,48 +67,38 @@
 
             <div class="promo">
               <h5 class="top">
-                <span>FREE SHIPPING</span> THIS WEEK ORDER OVER - $55
+                <span>FREE SHIPPING</span> THIS WEEK ORDER OVER- $55
               </h5>
             </div>
 
             <div class="lang-currency flex">
-              <select id="currency">
-                <option value="USD">USD $</option>
-                <option value="EUR">EUR €</option>
-              </select>
-
-              <select id="lang">
-                <option value="English">ENGLISH</option>
-                <option value="Espanol">ESPANOL</option>
-                <option value="Espanol">FRANCAIS</option>
-              </select>
+              <div class="flex">
+                <p>Currency</p>
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
+              <div class="flex">
+                <p>Lang</p>
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
             </div>
+
+            <!-- <div class="lang-currency flex">
+              <div id="currency">
+                <p value="USD">USD $</p>
+                <p value="EUR">EUR €</p>
+              </div>
+
+              <div id="lang">
+                <p value="English">ENGLISH</p>
+                <p value="Espanol">ESPANOL</p>
+                <p value="Espanol">FRANCAIS</p>
+              </div>
+            </div> -->
           </div>
         </div>
       </div>
     </header>
 
-    <!--
-    ================================================================================================================================
-    nav-bar
-    ================================================================================================================================
-  -->
-    <!-- <section class="nav-bar container-4">
-      <div class="navigate">
-        <div class="navigators card flex">
-          <i class="fa-solid fa-bars fa-2x"></i>
-          <i class="fa-brands fa-shopify fa-2x"></i>
-          <i class="fa-solid fa-house fa-2x"></i>
-          <i class="fa-regular fa-heart fa-2x"></i>
-        </div>
-      </div>
-    </section> -->
-
-    <!--
-    ================================================================================================================================
-    Navbar
-    ================================================================================================================================
-  -->
     <section class="navbar">
       <div class="container-4">
         <div class="py-1">
@@ -306,37 +296,40 @@
     <section class="banners">
       <div class="snap">
         <div class="banner b-1">
-          <div class="showcase banner-one"></div>
-          <div class="text flex text-center text-one">
-            <div class="text-content">
-              <h3 class="top trending">Trending Items</h3>
-              <h1 class="top">women's latest fashion sale</h1>
-              <h3 class="top price">starting at $ <span>20</span>.00</h3>
-              <button class="btn btn-md btn-tertiary">Shop Now</button>
+          <div class="showcase banner-one">
+            <div class="text flex text-center text-one">
+              <div class="text-content">
+                <h3 class="top trending">Trending Items</h3>
+                <h1 class="top">women's latest fashion sale</h1>
+                <h3 class="top price">starting at $<span>20</span>.00</h3>
+                <button class="btn btn-md btn-tertiary">Shop Now</button>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="banner b-2 hide">
-          <div class="showcase banner-two"></div>
-          <div class="text flex text-center text-two">
-            <div class="text-content">
-              <h3 class="top trending">Trending Accessories</h3>
-              <h1 class="top">Modern Sunglasses</h1>
-              <h3 class="top price">starting at $ <span>15</span>.00</h3>
-              <button class="btn btn-md btn-tertiary">Shop Now</button>
+          <div class="showcase banner-two">
+            <div class="text flex text-center text-two">
+              <div class="text-content">
+                <h3 class="top trending">Trending Accessories</h3>
+                <h1 class="top">Modern Sunglasses</h1>
+                <h3 class="top price">starting at $<span>15</span>.00</h3>
+                <button class="btn btn-md btn-tertiary">Shop Now</button>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="banner b-3 hide">
-          <div class="showcase banner-three"></div>
-          <div class="text flex text-center text-three">
-            <div class="text-content">
-              <h3 class="top trending">Sale Offer</h3>
-              <h1 class="top">New Fashion Summer Sale</h1>
-              <h3 class="top price">starting at $ <span>29</span>.99</h3>
-              <button class="btn btn-md btn-tertiary">Shop Now</button>
+          <div class="showcase banner-three">
+            <div class="text flex text-center text-three">
+              <div class="text-content">
+                <h3 class="top trending">Sale Offer</h3>
+                <h1 class="top">New Fashion Summer Sale</h1>
+                <h3 class="top price">starting at $<span>29</span>.99</h3>
+                <button class="btn btn-md btn-tertiary">Shop Now</button>
+              </div>
             </div>
           </div>
         </div>
@@ -1221,7 +1214,7 @@
                       and smooth.
                     </p>
                     <div class="cost flex">
-                      <h3 class="top actual-cost bold">$150.00</h3>
+                      <h3 class="top actual-cost bold">$99.00</h3>
                       <h3 class="top striked">$200.00</h3>
                     </div>
                     <button
@@ -1281,7 +1274,7 @@
                       table. At Anon we serve you all.
                     </p>
                     <div class="cost flex">
-                      <h3 class="top actual-cost bold">$1990.00</h3>
+                      <h3 class="top actual-cost bold">$1499.00</h3>
                       <h3 class="top striked">$2000.00</h3>
                     </div>
                     <button
@@ -1914,61 +1907,61 @@
             <h4 class="top-5 bold">Brand Category</h4>
             <ul class="flex top-4 split">
               <h5 class="top">Fashion:</h5>
-              <li>T-Shirt |</li>
-              <li>Shirts |</li>
-              <li>Shorts & Jeans |</li>
-              <li>Jacket |</li>
-              <li>Dress & Frock |</li>
-              <li>Innerwear |</li>
+              <li>T-Shirt</li>
+              <li>Shirts</li>
+              <li>Shorts & Jeans</li>
+              <li>Jacket</li>
+              <li>Dress & Frock</li>
+              <li>Innerwear</li>
               <li>Hosiery</li>
             </ul>
 
             <ul class="flex top-4">
               <h5 class="top">FootWear:</h5>
-              <li>Sport |</li>
-              <li>Formal |</li>
-              <li>Boots |</li>
-              <li>Casual |</li>
-              <li>Cowboy Shoes |</li>
-              <li>Safety Shoes |</li>
-              <li>Party Wear Shoes |</li>
-              <li>Branded |</li>
-              <li>Firstcopy |</li>
+              <li>Sport</li>
+              <li>Formal</li>
+              <li>Boots</li>
+              <li>Casual</li>
+              <li>Cowboy Shoes</li>
+              <li>Safety Shoes</li>
+              <li>Party Wear Shoes</li>
+              <li>Branded</li>
+              <li>Firstcopy</li>
               <li>Long Shoes</li>
             </ul>
 
             <ul class="flex top-4">
               <h5 class="top">Jewellery:</h5>
-              <li>Necklace |</li>
-              <li>Earrings |</li>
-              <li>Couple Rings |</li>
-              <li>Pendants |</li>
-              <li>Crystal |</li>
-              <li>Bangles |</li>
-              <li>Bracelets |</li>
-              <li>Nosepin |</li>
-              <li>Chain |</li>
-              <li>Earrings |</li>
+              <li>Necklace</li>
+              <li>Earrings</li>
+              <li>Couple Rings</li>
+              <li>Pendants</li>
+              <li>Crystal</li>
+              <li>Bangles</li>
+              <li>Bracelets</li>
+              <li>Nosepin</li>
+              <li>Chain</li>
+              <li>Earrings</li>
               <li>Couple Rings</li>
             </ul>
 
             <ul class="flex top-4">
               <h5 class="top">Cosmetics:</h5>
-              <li>Shampoo |</li>
-              <li>Bodywash |</li>
-              <li>Facewash |</li>
-              <li>Makeup Kit |</li>
-              <li>Liner |</li>
-              <li>Lipstick |</li>
-              <li>Perfume |</li>
-              <li>Body Soap |</li>
-              <li>Scrub |</li>
-              <li>Hair Gel |</li>
-              <li>Hair Colors |</li>
-              <li>Hair Dye |</li>
-              <li>Sunscreen |</li>
-              <li>Skin Loson |</li>
-              <li>Liner |</li>
+              <li>Shampoo</li>
+              <li>Bodywash</li>
+              <li>Facewash</li>
+              <li>Makeup Kit</li>
+              <li>Liner</li>
+              <li>Lipstick</li>
+              <li>Perfume</li>
+              <li>Body Soap</li>
+              <li>Scrub</li>
+              <li>Hair Gel</li>
+              <li>Hair Colors</li>
+              <li>Hair Dye</li>
+              <li>Sunscreen</li>
+              <li>Skin Loson</li>
+              <li>Liner</li>
               <li>Lipstick</li>
             </ul>
           </div>
