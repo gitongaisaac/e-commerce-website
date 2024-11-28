@@ -174,100 +174,7 @@ class UI {
       }
     });
   }
-
-  static autoNavigation() {
-    const showcaseSlider1 = setInterval(() => {
-      b1.classList.add("hide");
-      b2.classList.remove("hide");
-      b3.classList.add("hide");
-
-      // textTwo.classList.add("slide-in");
-
-      dot1.classList.remove("highlight");
-      dot2.classList.add("highlight");
-      dot3.classList.remove("highlight");
-    }, 7000);
-
-    const showcaseSlider2 = setInterval(() => {
-      // b2.classList.add("slide-out");
-      b1.classList.add("hide");
-      b2.classList.add("hide");
-      b3.classList.remove("hide");
-
-      // textThree.classList.add("slide-in");
-
-      dot1.classList.remove("highlight");
-      dot2.classList.remove("highlight");
-      dot3.classList.add("highlight");
-    }, 14000);
-
-    const showcaseSlider3 = setInterval(() => {
-      b1.classList.remove("hide");
-      b2.classList.add("hide");
-      b3.classList.add("hide");
-
-      dot1.classList.add("highlight");
-      dot2.classList.remove("highlight");
-      dot3.classList.remove("highlight");
-    }, 21000);
-
-    UI.manualNavigation(showcaseSlider1, showcaseSlider2, showcaseSlider3);
-  }
-
-  static manualNavigation(e) {
-    if (e.target.classList.contains("dot-1")) {
-      b1.classList.remove("hide");
-      b1.classList.add("hide");
-      b1.classList.add("hide");
-
-      dot1.classList.add("highlight");
-      dot2.classList.remove("highlight");
-      dot3.classList.remove("highlight");
-    } else if (e.target.classList.contains("dot-2")) {
-      b1.classList.add("hide");
-      b1.classList.remove("hide");
-      b1.classList.add("hide");
-
-      dot1.classList.remove("highlight");
-      dot2.classList.add("highlight");
-      dot3.classList.remove("highlight");
-    } else if (e.target.classList.contains("dot-3")) {
-      b1.classList.add("hide");
-      b1.classList.add("hide");
-      b1.classList.remove("hide");
-
-      dot1.classList.remove("highlight");
-      dot2.classList.remove("highlight");
-      dot3.classList.add("highlight");
-    }
-  }
-
-  static categorySubItem() {
-    pluss.forEach((plus) => {
-      subItems.forEach((subItem) => {
-        plus.addEventListener("click", (e) => {
-          subItem.classList.toggle("hide");
-          console.log(e);
-        });
-      });
-    });
-  }
 }
-
-dots1.addEventListener("click", (e) => {
-  UI.manualNavigation(e);
-  setTimeout(() => {
-    clearInterval(showcaseSlider1);
-    clearInterval(showcaseSlider2);
-    clearInterval(showcaseSlider3);
-  }, 7000);
-});
-
-/*
-================================================================================================================================
-Substring Hover
-================================================================================================================================
-*/
 
 /*
 ================================================================================================================================
@@ -276,9 +183,6 @@ On Loading the page
 */
 function onLoading() {
   UI.titleSubString();
-  // UI.sellerSubstring();
-  // UI.autoNavigation();
-  UI.categorySubItem();
   UI.newsletter();
 }
 
@@ -320,9 +224,3 @@ for (let i = ""; i < "12"; i++) {
     imgTags[c].style.backgroundImage = images[c];
   });
 }
-
-/*
-================================================================================================================================
-filter
-================================================================================================================================
-*/

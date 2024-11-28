@@ -1,3 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap");
+
+:root {
+  --background-color: #f8fafc;
+  --background-color: #ffffff;
+  --dark-color: #000000;
+  --light-color: #ffffff;
+  --grey-mid-light: #acacac;
+  --grey-mid-dark: #2d2d2d;
+  --grey-light: #e6e6e6;
+
+  --dark-grey: #1a1a1a;
+  --light-grey: #ececec;
+  --primary-color: #ed6a5e;
+  --secondary-color: #f0932b;
+  --tertiary-color: #ff0000;
+  --accent-color: #3ecc6e;
+
+  --body-font: "Nunito", sans-serif;
+  --heading-font: "Lato", sans-serif;
+  --rough-font: "Proza Libre", sans-serif;
+  --accent-font: "Josefin Sans", sans-serif;
+
+  --fs-small: 14px;
+  --fs-normal: 16px;
+  --fs-regular: 18px;
+  --fs-large: 20px;
+  --fs-xlarge: 24px;
+  --fs-xxlarge: 32px;
+
+  --transition-3: 0.5s ease-in-out all;
+
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--background-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+}
+
 .fade-in {
   animation: fadeIn 1s ease-in forwards;
 }
@@ -52,21 +107,16 @@ Newsletter
 .newsletter input {
   padding: 5px;
   width: 300px;
-  border-radius: 5px;
-  border: 2px solid var(--grey-300);
+  border: 1px solid var(--grey-mid-light);
 }
 
 .newsletter .btn {
-  margin: 20px;
   margin-top: 30px;
   text-align: center;
+  border-radius: 10px;
   letter-spacing: 0.7px;
 
   transition: 0.3s ease-in;
-}
-
-.newsletter button:hover {
-  background-color: var(--red-300);
 }
 
 .newsletter .close {
@@ -79,14 +129,14 @@ Newsletter
   text-align: center;
   border-radius: 50%;
   color: var(--light-color);
-  background-color: var(--red-300);
-  border: 1px solid var(--complement-30);
+  border: 1px solid var(--light-color);
+  background-color: var(--primary-color);
 
   transition: 0.3s ease-in;
 }
 
 .newsletter .close:hover {
-  background-color: var(--red-500);
+  background-color: var(--tertiary-color);
 }
 
 /*
@@ -112,8 +162,8 @@ Header
 }
 
 .promo h5 {
-  font-size: var(--font-size-2);
-  color: var(--faded-500);
+  font-size: var(--fs-normal);
+  color: var(--primary-color);
 }
 
 .promo span {
@@ -129,11 +179,6 @@ Header
   margin: 0;
 }
 
-.lang-currency h4 {
-  color: var(--light-color);
-  font-size: var(--font-size-3);
-}
-
 .lang-currency .flex {
   gap: 10px;
 }
@@ -147,12 +192,6 @@ Header
 Navbar
 ================================================================================================================================
 */
-.navbar {
-  position: relative;
-  background-color: var(--grey-100);
-  border-bottom: 1px solid var(--sip-300);
-}
-
 .navbar .flex {
   height: 60px;
   justify-content: space-between;
@@ -166,7 +205,7 @@ Navbar
   padding: 0 10px;
   max-width: 700px;
   border-radius: 15px;
-  border: 1.5px solid var(--flip-700);
+  border: 1px solid var(--grey-mid-light);
 }
 
 .input .flex {
@@ -177,11 +216,12 @@ Navbar
   width: 600px;
   height: 20px;
   padding: 0 10px;
-  background-color: var(--grey-100);
+  background-color: var(--background-color);
 }
 
 .input i {
   color: var(--tertiary-800);
+  color: var(--secondary-color);
 }
 
 .profile .count {
@@ -192,16 +232,18 @@ Navbar
   right: 0;
   font-weight: 600;
   position: absolute;
-  color: var(--faded-500);
+  color: var(--tertiary-color);
 }
 
 .profile li a {
-  color: var(--grey-800);
+  color: var(--primary-color);
+
+  transition: color 0.4s ease-in;
 }
 
 .profile li a:hover,
 .profile li a:focus {
-  color: var(--red-300);
+  color: var(--tertiary-color);
 }
 
 /*
@@ -209,9 +251,6 @@ Navbar
 Services
 ================================================================================================================================
 */
-.services {
-}
-
 .services .container-4 {
   overflow: visible;
 }
@@ -226,7 +265,7 @@ Services
   padding: 5px 5px;
   font-weight: 600;
   letter-spacing: 1px;
-  color: var(--grey-800);
+  color: var(--dark-grey);
 }
 
 .dropdown-card {
@@ -251,7 +290,7 @@ Services
   position: absolute;
   visibility: hidden;
   pointer-events: none;
-  background-color: var(--complement-30);
+  background-color: var(--light-color);
 
   transition: var(--transition-3);
 }
@@ -286,7 +325,8 @@ Services
 
 .list-item {
   font-weight: 400;
-  font-family: var(--bodyfont-1);
+
+  transition: 0.4s ease-in;
 }
 
 .drop-down li {
@@ -296,12 +336,11 @@ Services
 
 .list-item:hover {
   font-weight: 600;
-  color: var(--faded-500);
+  color: var(--primary-color);
 }
 
 .item:hover {
-  color: var(--faded-600);
-  border-bottom: 2px solid var(--sip-400);
+  color: var(--primary-color);
 }
 
 /*
@@ -315,7 +354,6 @@ Banner
 }
 
 .snap {
-  /* display: flex; */
   margin: 0 auto;
   max-width: 1400px;
   margin-bottom: 40px;
@@ -371,23 +409,22 @@ Banner
 }
 
 .text .trending {
-  color: var(--red-300);
+  color: var(--primary-color);
 }
 
 .text h1 {
   font-size: 2.5rem;
-  font-family: var(--bodyfont-2);
+  font-weight: 500;
 }
 
 .text h3 {
   padding: 10px 0;
-  font-weight: 500;
-  font-family: var(--bodyfont-2);
+  font-weight: 700;
 }
 
 .text .price {
-  color: var(--sip-500);
-  font-weight: 500;
+  color: var(--tertiary-color);
+  font-weight: 700;
 }
 
 .price span {
@@ -407,11 +444,11 @@ Banner
 .dot {
   transition: 0.5s;
   background-color: transparent;
-  border: 2px solid var(--faded-500);
+  border: 2px solid var(--primary-color);
 }
 
 .dot:hover {
-  background-color: var(--faded-500);
+  background-color: var(--primary-color);
 }
 
 /*
@@ -439,12 +476,12 @@ Product
 
 .product-showcase::-webkit-scrollbar-thumb {
   border-radius: 50px;
-  background-color: var(--tone-200);
-  border: 1px solid var(--grey-300);
+  border: 1px solid var(--light-color);
+  background-color: var(--grey-mid-light);
 }
 
 .product-showcase::-webkit-scrollbar-thumb:hover {
-  background-color: var(--tone-300);
+  background-color: var(--grey-mid-dark);
 }
 
 .product-showcase {
@@ -464,18 +501,16 @@ Product
   min-width: 320px;
   margin-bottom: 10px;
   scroll-snap-align: start;
-  box-shadow: var(--shadow-2);
   justify-content: flex-start;
-  border: 1px solid var(--grey-500);
-  background-color: var(--background-color);
+  background-color: var(--light-color);
+
+  box-shadow: var(--shadow-2);
 }
 
 .item-img {
-  color: #333;
   padding: 10px;
   border-radius: 10px;
-  border: 1px solid var(--grey-500);
-  background-color: var(--grey-300);
+  background-color: var(--light-color);
 }
 
 .item-img img {
@@ -484,12 +519,14 @@ Product
 
 .item-description h5 {
   font-size: 1rem;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--accent-font);
 }
 
 .item-description a {
   font-weight: 600;
-  color: var(--red-400);
+  color: var(--tertiary-color);
 }
 
 .product-name {
@@ -498,7 +535,7 @@ Product
 }
 
 .highlight {
-  background-color: var(--faded-500);
+  background-color: var(--primary-color);
 }
 
 /*
@@ -507,8 +544,8 @@ Display
 ================================================================================================================================
 */
 .display .container-5 {
-  overflow: visible;
   padding: 0 15px;
+  overflow: visible;
 }
 
 .display .grid {
@@ -520,7 +557,7 @@ Display
 .category h3 {
   font-size: 25px;
   font-weight: 600;
-  color: var(--dark-color);
+  color: var(--grey-mid-dark);
 }
 
 .category-seller {
@@ -530,8 +567,7 @@ Display
 
 .category.card {
   max-width: 300px;
-  border: 1px solid var(--grey-400);
-  background-color: var(--tone-100);
+  background-color: var(--light-color);
 }
 
 .category .flex {
@@ -541,7 +577,7 @@ Display
 .category li {
   margin-bottom: 5px;
   padding-bottom: 5px;
-  border-bottom: 1px solid var(--grey-300);
+  border-bottom: 1px solid var(--grey-light);
 }
 
 .category img {
@@ -549,8 +585,15 @@ Display
   border-radius: 7px;
 }
 
+.category-list {
+  height: 50px;
+}
+
 .category-list p {
+  font-size: 18px;
+  font-weight: 600;
   letter-spacing: 1px;
+  font-family: var(--accent-font);
 }
 
 .category-sub-item ul {
@@ -575,25 +618,24 @@ Display
 .seller h3 {
   font-size: 25px;
   font-weight: 600;
-  color: var(--tone-600);
 }
 
 .seller-description .title {
-  font-family: var(--bodyfont-9);
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--accent-font);
 }
 
 .category-seller a:hover {
-  color: var(--faded-500);
+  color: var(--primary-color);
 }
 
 .category-seller a:focus {
   outline: none;
-  color: var(--faded-500);
+  color: var(--primary-color);
 }
 
 .seller-item {
-  border-bottom: 2px solid var(--grey-300);
   justify-content: flex-start;
 }
 
@@ -605,12 +647,12 @@ Display
 .rate-icons i {
   padding: 0px;
   margin: 0px;
-  color: #f9932b;
+  color: var(--secondary-color);
 }
 
 .rate-icons {
-  padding: 10px;
   gap: 1px;
+  padding: 10px 0;
   justify-content: flex-start;
 }
 
@@ -620,22 +662,25 @@ Display
 
 .cost h5 {
   font-size: 16px;
+  font-weight: 600;
+  color: var(--grey-mid-light);
 }
 
 .cost h4 {
-  font-size: 20px;
-  font-family: var(--bodyfont-3);
-  color: var(--red-500);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--tertiary-color);
+  font-family: var(--accent-font);
 }
 
 .striked {
-  text-decoration: line-through var(--grey-900) solid 1px;
+  text-decoration: line-through var(--grey-mid-light) solid 1px;
 }
 
 /* ================ Display showcase ================== */
 .display-showcase {
-  justify-content: flex-start;
   gap: 20px;
+  justify-content: flex-start;
 }
 
 .display-showcase .grid {
@@ -648,7 +693,6 @@ Display
   padding-bottom: 10px;
   scroll-snap-type: inline mandatory;
   overscroll-behavior-inline: contain;
-  background-color: var(--background-color);
 }
 
 .tabs:hover {
@@ -683,13 +727,17 @@ Display
   font-weight: 600;
 }
 
+.drop-down .display-title {
+  padding: 0px;
+}
+
 .display-showcase .card {
   max-width: 310px;
   box-shadow: none;
   overflow: visible;
   padding: 10px 10px;
-  border: 1px solid var(--grey-400);
-  background-color: var(--tone-100);
+
+  box-shadow: var(--shadow-2);
 }
 
 .collection {
@@ -713,7 +761,7 @@ Display
 .collection-description .vet {
   font-size: 17px;
   font-weight: 600;
-  color: var(--grey-900);
+  font-family: var(--accent-font);
 }
 
 @keyframes walk-left {
@@ -727,27 +775,23 @@ Display
 }
 
 .item-name:hover {
-  color: var(--faded-500);
+  color: var(--secondary-color);
 }
 
 .item-name:focus {
   outline: none;
   font-weight: bold;
-  color: var(--secondary-500);
+  color: var(--secondary-color);
 }
 
 .collection-description .cost h4 {
-  color: var(--red-400);
+  font-size: 17px;
+  color: var(--tertiary-color);
 }
 
 .deals-1,
 .deals-2 {
   padding: 40px;
-}
-
-.deals .grid {
-  grid-template-columns: 3fr 4fr;
-  align-items: center;
 }
 
 .deals img {
@@ -758,19 +802,19 @@ Display
 }
 
 .actual-cost {
-  color: #f0932b;
+  color: var(--tertiary-color);
 }
 
 .deals .striked {
-  color: var(--grey-800);
+  color: var(--grey-mid-light);
 }
 
 .deals .btn {
-  background-color: var(--sip-500);
+  background-color: var(--dark-color);
 }
 
 .deals-2 .btn {
-  background-color: var(--tint-700);
+  background-color: var(--dark-color);
 }
 
 .deals button h4 {
@@ -786,7 +830,7 @@ Display
   padding: 5px;
   border-radius: 50px;
   margin-bottom: 20px;
-  background-color: var(--grey-300);
+  background-color: var(--grey-light);
 }
 
 .time {
@@ -797,7 +841,7 @@ Display
   gap: 0px;
   margin: 0;
   box-shadow: none;
-  background-color: var(--grey-300);
+  background-color: var(--grey-light);
 }
 
 .new {
@@ -809,10 +853,10 @@ Display
   overflow: hidden;
   max-width: 230px;
   position: relative;
+  background-color: var(--light-color);
+
   box-shadow: var(--shadow-1);
-  background-color: #fffffb;
   transition: var(--transition-3);
-  border: 1px solid var(--grey-400);
 }
 
 .new .card:hover {
@@ -834,7 +878,7 @@ Display
   padding: 2px 5px;
   border-radius: 4px;
   position: absolute;
-  background-color: var(--tint-600);
+  background-color: var(--accent-color);
 }
 
 .new #no1 .offer h5 {
@@ -856,12 +900,13 @@ Display
 
 .new #no4 .sale-new,
 .new #no12 .sale-new {
-  background-color: var(--faded-400);
+  background-color: var(--primary-color);
 }
 
 .new .sale-new h5 {
   font-size: 14px;
   text-align: center;
+  font-family: var(--accent-font);
   color: var(--light-color);
 }
 
@@ -869,10 +914,8 @@ Display
   opacity: 1;
   pointer-events: all;
   visibility: visible;
-  animation-name: options;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
+
+  animation: options 0.5s ease-in-out forwards;
 }
 
 .new .options {
@@ -894,25 +937,26 @@ Display
 }
 
 .new .options a {
-  border: 1px solid var(--grey-400);
-  background-color: var(--light-color);
   padding: 1px;
-  border-radius: 5px;
   transition: 1s;
+  border-radius: 5px;
+  background-color: var(--light-color);
+  border: 1px solid var(--grey-mid-light);
 }
 
 .new .options a:hover {
+  border-color: var(--dark-color);
   background-color: var(--dark-color);
 }
 
 .new .options i {
-  color: var(--grey-600);
   width: 30px;
   height: 30px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   transition: 1s;
+  align-items: center;
+  justify-content: center;
+  color: var(--grey-mid-light);
 }
 
 .new .options i:hover {
@@ -968,12 +1012,15 @@ Display
 }
 
 .new-title {
-  color: var(--red-500);
+  font-size: 20px;
   font-weight: 600;
+  color: var(--tertiary-color);
+  font-family: var(--accent-font);
 }
 
 .view .rate-icons {
   padding: 5px 0;
+  justify-content: flex-start;
 }
 
 .tese-2 {
@@ -981,39 +1028,40 @@ Display
 }
 
 .testimony-services .grid {
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  align-items: flex-start;
   grid-template-columns: 1fr 2fr 1fr;
 }
 
-.testimony-services .display-title {
-  text-align: left;
-}
-
 .testimony-services i {
-  color: var(--faded-500);
+  color: var(--primary-color);
 }
 
 .testimony-services .display-title {
-  font-size: 20px;
+  font-size: 22px;
+  text-align: left;
+  font-family: var(--heading-font);
 }
 
 .testimonials img {
-  display: grid;
-  justify-items: center;
   width: 120px;
   border-radius: 50%;
 }
 
 .testimonials .imag {
-  display: grid;
+  display: flex;
   justify-content: center;
 }
 
 .summer-collection {
-  background-image: url(../images/cta-banner.jpg);
-  height: 450px;
   display: grid;
-  justify-content: center;
+  max-height: 450px;
+  min-height: 400px;
   align-items: center;
+  justify-content: center;
+  background-image: url(../images/cta-banner.jpg);
 }
 
 .summer-collection .card {
@@ -1021,23 +1069,23 @@ Display
 }
 
 .discount {
-  background-color: var(--dark-color);
-  color: var(--light-color);
+  left: 25%;
   max-width: 130px;
   border-radius: 5px;
   text-align: center;
   position: relative;
-  left: 25%;
+  color: var(--light-color);
+  background-color: var(--dark-color);
 }
 
 .blade h4 {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 600;
-  font-family: var(--bodyfont-6);
+  font-family: var(--accent-font);
 }
 
 .blade h5 {
-  font-family: var(--bodyfont-6);
+  font-family: var(--accent-font);
 }
 
 .blade .flex {
@@ -1069,7 +1117,7 @@ Exhibition
 }
 
 .indice {
-  color: var(--red-300);
+  color: var(--tertiary-color);
   letter-spacing: 1px;
 }
 
@@ -1094,17 +1142,19 @@ Footer
 .footer h4,
 .footer h3 {
   color: var(--light-color);
+  font-weight: 600;
 }
 
 .footer h5 {
-  color: var(--grey-500);
   font-weight: 600;
+  letter-spacing: 1.2px;
+  color: var(--light-color);
 }
 
 .brands {
   border-radius: 20px;
   padding-bottom: 1.5rem;
-  color: var(--grey-600);
+  color: var(--grey-mid-light);
 }
 
 .brands .flex {
@@ -1116,7 +1166,7 @@ Footer
 }
 
 .brands .bold {
-  color: var(--light-color);
+  color: var(--primary-color);
 }
 
 .quick-links {
@@ -1125,17 +1175,16 @@ Footer
 }
 
 .quick-links li a {
-  color: var(--lit-700);
-  color: var(--grey-700);
+  color: var(--grey-mid-light);
 }
 
 .quick-links li a:hover {
-  color: var(--lit-200);
+  color: var(--primary-color);
 }
 
 .contact .flex {
   justify-content: flex-start;
-  color: var(--grey-600);
+  color: var(--grey-mid-light);
 }
 
 .social {
@@ -1144,11 +1193,11 @@ Footer
 }
 
 .social i {
-  color: var(--faded-300);
+  color: var(--light-color);
 }
 
 .social i:hover {
-  color: var(--tone-100);
+  color: var(--primary-color);
 }
 
 .contribution img {
@@ -1161,7 +1210,7 @@ Footer
 }
 
 .copyright h5 {
-  font-weight: 400;
+  font-weight: 600;
 }
 
 /* Animations */
